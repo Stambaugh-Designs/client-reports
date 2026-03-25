@@ -231,6 +231,32 @@ const REPORT_DATA = __REPORT_DATA_PLACEHOLDER__;
       '<div class="mini-kpi"><div class="value">' + D.keywords.etv + '<span style="font-size:14px;color:var(--text-secondary);">/mo</span></div><div class="label">Estimated Traffic Value</div></div>' +
       '<div class="mini-kpi"><div class="value">' + D.keywords.estVisits + '</div><div class="label">Est. Organic Visits/Mo</div></div></div>';
     html += '<div class="chart-container" style="height:220px;margin-top:16px;"><canvas id="keywordChart"></canvas></div>';
+
+    // Top Keyword Rankings Table
+    if (D.keywords.topRankings && D.keywords.topRankings.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin:28px 0 12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Keyword Rankings</h4>';
+      html += '<div style="overflow-x:auto;"><table><thead><tr><th>#</th><th>Keyword</th><th>Pos</th><th>Change</th><th>Volume</th><th>ETV</th><th>CPC</th><th>KD</th><th>Ranking URL</th></tr></thead><tbody>';
+      D.keywords.topRankings.forEach(function(kw, i) {
+        var changeBadge = '';
+        if (kw.isNew) { changeBadge = '<span class="tag tag-blue" style="font-size:10px;">NEW</span>'; }
+        else if (kw.change > 0) { changeBadge = '<span class="tag tag-green">▲ ' + kw.change + '</span>'; }
+        else if (kw.change < 0) { changeBadge = '<span class="tag tag-red">▼ ' + Math.abs(kw.change) + '</span>'; }
+        else { changeBadge = '<span class="tag" style="background:var(--surface-alt);color:var(--text-secondary);">—</span>'; }
+        var posStyle = kw.position <= 3 ? 'color:var(--green);font-weight:700;' : (kw.position <= 10 ? 'color:var(--blue);font-weight:600;' : '');
+        var kdColor = kw.kd <= 15 ? 'var(--green)' : (kw.kd <= 40 ? 'var(--orange)' : 'var(--red)');
+        html += '<tr><td>' + (i + 1) + '</td><td><strong>' + kw.keyword + '</strong></td>';
+        html += '<td class="mono" style="' + posStyle + '">' + kw.position + '</td>';
+        html += '<td>' + changeBadge + '</td>';
+        html += '<td class="mono">' + kw.volume + '</td>';
+        html += '<td class="mono">' + kw.etv + '</td>';
+        html += '<td class="mono">$' + kw.cpc + '</td>';
+        html += '<td><span style="color:' + kdColor + ';font-weight:600;">' + kw.kd + '</span></td>';
+        html += '<td style="font-size:11px;color:var(--text-secondary);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + kw.url + '</td>';
+        html += '</tr>';
+      });
+      html += '</tbody></table></div>';
+    }
+
     html += '</div>';
   }
 
