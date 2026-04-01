@@ -3,44 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEO &amp; Analytics Report — Stambaugh Designs</title>
+<title id="pageTitle">SEO &amp; Analytics Report</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+// ══════════════════════════════════════════════════════════════
+//  REPORT DATA — This is the ONLY section that changes per
+//  client/month. The scheduled task replaces this block.
+// ══════════════════════════════════════════════════════════════
+const REPORT_DATA = {"client": {"domain": "stambaughdesigns.co", "name": "Stambaugh Designs", "reportDateRange": "March 2 \u2013 March 30, 2026", "generatedDate": "April 1, 2026"}, "aiSummary": "<p>Stambaugh Designs continues to expand its organic keyword footprint with <span class=\"highlight-stat\">65 total keywords</span> tracked by DataForSEO, including <span class=\"highlight-stat\">52 new keywords</span> discovered this period. This significant keyword growth demonstrates that Google is indexing the site's location and industry pages effectively.</p>\n\n<p>Google Search Console recorded <span class=\"highlight-stat\">22 clicks</span> and <span class=\"highlight-stat\">17,689 impressions</span> over 29 days, with impressions growing <span class=\"highlight-stat\">+14.6% month-over-month</span> compared to the previous period (15,441). While clicks decreased from 30 to 22 (<span class=\"highlight-warn\">-26.7%</span>), this is offset by the much larger impression growth, suggesting the site is appearing for more queries but at deeper positions where clicks are less frequent.</p>\n\n<p>The Google Business Profile listing continues to be the primary traffic driver from GSC, generating 16 of 22 total clicks with a strong position 2.6 average. Branded query \"stambaugh designs\" ranks well with 7.7% CTR. Core service queries like \"bellingham web design\" (333 impressions) and \"bellingham website design\" (208 impressions) are generating significant visibility.</p>\n\n<p>Rybbit Analytics shows <span class=\"highlight-stat\">1,001 sessions</span> and <span class=\"highlight-stat\">682 unique visitors</span> with healthy engagement: <span class=\"highlight-stat\">96-second average session duration</span> and 1.47 pages per session. The 70.4% bounce rate is reasonable for a service-based website. Google leads referrals at 41.1%, with Facebook channels collectively driving about 31% of referred traffic.</p>\n\n<p>The location pages strategy is bearing fruit, with new rankings appearing for cities like Chicago, Phoenix, Houston, and Cape Coral. While these are currently in deeper positions (30\u201390), they represent valuable long-tail opportunities. The \"seo bellingham\" keyword improved <span class=\"highlight-stat\">10 positions</span> this period, now ranking at position 31 \u2014 a promising trajectory toward page-one visibility for this core service term.</p>", "kpis": [{"label": "Total Clicks (GSC)", "value": "22", "trendClass": "down", "trendText": "\u25bc -26.7% vs prev period"}, {"label": "Total Impressions", "value": "17,689", "trendClass": "up", "trendText": "\u25b2 +14.6% vs prev period"}, {"label": "Avg CTR", "value": "0.12%", "trendClass": "neutral", "trendText": "\u2014 Building positions"}, {"label": "Avg Position", "value": "39.0", "trendClass": "neutral", "trendText": "\u2014 Expanding keyword base"}], "rybbit": {"available": true, "miniKpis": [{"value": "1,001", "label": "Sessions"}, {"value": "1,469", "label": "Pageviews"}, {"value": "682", "label": "Unique Visitors"}, {"value": "1.47", "label": "Pages/Session"}], "secondaryKpis": [{"value": "96s", "label": "Avg Duration", "style": ""}, {"value": "70.4%", "label": "Bounce (All)", "style": "color: var(--red);"}, {"value": "65.5%", "label": "Bounce (US)", "style": "color: var(--red);"}], "alert": null, "referralSources": [{"rank": 1, "source": "google.com", "sessions": "60", "share": "41.1%", "bounceRate": "63.3%", "bounceClass": "tag-red"}, {"rank": 2, "source": "m.facebook.com", "sessions": "31", "share": "21.2%", "bounceRate": "54.8%", "bounceClass": "tag-orange"}, {"rank": 3, "source": "youtube.com", "sessions": "14", "share": "9.6%", "bounceRate": "35.7%", "bounceClass": "tag-orange"}, {"rank": 4, "source": "lm.facebook.com", "sessions": "10", "share": "6.9%", "bounceRate": "50.0%", "bounceClass": "tag-orange"}, {"rank": 5, "source": "l.facebook.com", "sessions": "5", "share": "3.4%", "bounceRate": "40.0%", "bounceClass": "tag-orange"}]}, "gsc": {"available": true, "dailyChart": {"labels": ["Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13", "Mar 14", "Mar 15", "Mar 16", "Mar 17", "Mar 18", "Mar 19", "Mar 20", "Mar 21", "Mar 22", "Mar 23", "Mar 24", "Mar 25", "Mar 26", "Mar 27", "Mar 28", "Mar 29", "Mar 30"], "clicks": [0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 3, 0, 3, 0, 0, 0, 0, 0, 3, 1, 1, 1, 1, 1, 1], "impressions": [351, 399, 661, 615, 696, 562, 628, 667, 527, 692, 814, 645, 650, 709, 509, 555, 535, 786, 478, 553, 549, 465, 763, 645, 861, 514, 589, 758, 513]}, "dateRangeLabel": "Mar 2 \u2013 Mar 30, 2026", "topQueries": [{"rank": 1, "query": "bellingham web design", "clicks": "2", "impressions": "333", "ctr": "0.6%", "avgPos": "13.3"}, {"rank": 2, "query": "website designers near me", "clicks": "1", "impressions": "2", "ctr": "50.0%", "avgPos": "1.0"}, {"rank": 3, "query": "website creator near me", "clicks": "1", "impressions": "1", "ctr": "100.0%", "avgPos": "1.0"}, {"rank": 4, "query": "stambaugh designs", "clicks": "1", "impressions": "13", "ctr": "7.7%", "avgPos": "2.6"}, {"rank": 5, "query": "seo company bellingham", "clicks": "1", "impressions": "59", "ctr": "1.7%", "avgPos": "29.4"}, {"rank": 6, "query": "bellingham website design", "clicks": "1", "impressions": "208", "ctr": "0.5%", "avgPos": "19.6"}, {"rank": 7, "query": "wordpress websites bellingham", "clicks": "0", "impressions": "51", "ctr": "0.0%", "avgPos": "11.5"}, {"rank": 8, "query": "wordpress web design bellingham", "clicks": "0", "impressions": "58", "ctr": "0.0%", "avgPos": "11.8"}, {"rank": 9, "query": "yonkers ny website design agency", "clicks": "0", "impressions": "5", "ctr": "0.0%", "avgPos": "34.4"}, {"rank": 10, "query": "wordpress website design in whitefish bay", "clicks": "0", "impressions": "9", "ctr": "0.0%", "avgPos": "24.7"}], "topPages": [{"page": "Homepage (GBP)", "clicks": "16", "impressions": "3,071", "ctr": "0.5%", "avgPos": "2.6", "lowCtr": true}, {"page": "Homepage", "clicks": "3", "impressions": "1,347", "ctr": "0.2%", "avgPos": "43.4", "lowCtr": true}, {"page": "/industries/restaurant-marketing-bellingham-wa/", "clicks": "1", "impressions": "44", "ctr": "2.3%", "avgPos": "24.4", "lowCtr": true}, {"page": "/industries/plumber-marketing-bellingham/", "clicks": "1", "impressions": "238", "ctr": "0.4%", "avgPos": "72.2", "lowCtr": true}, {"page": "/about/", "clicks": "1", "impressions": "288", "ctr": "0.3%", "avgPos": "50.3", "lowCtr": true}], "deviceChart": {"labels": ["Desktop", "Mobile", "Tablet"], "data": [20, 2, 0]}, "countries": [{"flag": "\ud83c\uddfa\ud83c\uddf8", "name": "United States", "clicks": "17"}, {"flag": "\ud83c\uddee\ud83c\uddf3", "name": "India", "clicks": "5"}]}, "keywords": {"available": true, "miniKpis": [{"value": "65", "label": "Total Keywords"}, {"value": "+52", "label": "New Keywords", "style": "color: var(--green);"}, {"value": "5 \u25b2", "label": "Moving Up", "style": "color: var(--green);"}, {"value": "7 \u25bc", "label": "Moving Down", "style": "color: var(--red);"}], "distribution": [{"range": "Top 3", "tagClass": "tag-green", "count": "1", "pct": 3, "barColor": "var(--green)"}, {"range": "Pos 4 \u2013 10", "tagClass": "tag-blue", "count": "0", "pct": 0, "barColor": ""}, {"range": "Pos 11 \u2013 20", "tagClass": "tag-blue", "count": "0", "pct": 0, "barColor": ""}, {"range": "Pos 21 \u2013 50", "tagClass": "tag-orange", "count": "27", "pct": 73, "barColor": "var(--orange)"}, {"range": "Pos 51 \u2013 100", "tagClass": "tag-red", "count": "37", "pct": 100, "barColor": "var(--red)"}], "etv": "$179", "estVisits": "~26", "chartData": [1, 0, 0, 27, 37], "topRankings": [{"keyword": "bellingham wa web design", "position": 31, "volume": "590", "cpc": "9.71", "kd": 54, "etv": "1.2", "url": "/digital-marketing-services/website-design-development-bellingham-wa/", "isNew": true, "change": 0}, {"keyword": "bellingham web design", "position": 60, "volume": "590", "cpc": "9.71", "kd": 68, "etv": "1.2", "url": "/", "isNew": false, "change": -21}, {"keyword": "bellingham website design", "position": 29, "volume": "590", "cpc": "9.71", "kd": 68, "etv": "1.2", "url": "/digital-marketing-services/website-design-development-bellingham-wa/", "isNew": true, "change": 0}, {"keyword": "internet marketing chicago", "position": 47, "volume": "480", "cpc": "2.44", "kd": 41, "etv": "1.0", "url": "/locations/chicago/", "isNew": true, "change": 0}, {"keyword": "internet marketing phoenix", "position": 83, "volume": "480", "cpc": "14.75", "kd": 57, "etv": "1.0", "url": "/locations/phoenix/", "isNew": true, "change": 0}, {"keyword": "internet marketing phoenix az", "position": 88, "volume": "480", "cpc": "14.75", "kd": 61, "etv": "1.0", "url": "/locations/phoenix/", "isNew": true, "change": 0}, {"keyword": "web marketing phoenix", "position": 72, "volume": "480", "cpc": "14.75", "kd": 50, "etv": "1.0", "url": "/locations/phoenix/", "isNew": true, "change": 0}, {"keyword": "web design cape coral fl", "position": 52, "volume": "390", "cpc": "0.00", "kd": 19, "etv": "0.8", "url": "/locations/cape-coral/", "isNew": true, "change": 0}, {"keyword": "web design firms phoenix", "position": 89, "volume": "390", "cpc": "28.25", "kd": 28, "etv": "0.8", "url": "/locations/phoenix/", "isNew": true, "change": 0}, {"keyword": "bellingham seo", "position": 50, "volume": "320", "cpc": "0.00", "kd": 0, "etv": "0.7", "url": "/digital-marketing-services/seo-bellingham/", "isNew": true, "change": 0}, {"keyword": "bellingham wa seo", "position": 33, "volume": "320", "cpc": "0.00", "kd": 39, "etv": "0.7", "url": "/digital-marketing-services/seo-bellingham/", "isNew": false, "change": 0}, {"keyword": "seo bellingham", "position": 31, "volume": "320", "cpc": "0.00", "kd": 2, "etv": "0.7", "url": "/digital-marketing-services/seo-bellingham/", "isNew": false, "change": 10}, {"keyword": "seo bellingham wa", "position": 38, "volume": "320", "cpc": "0.00", "kd": 15, "etv": "0.7", "url": "/digital-marketing-services/seo-bellingham/", "isNew": false, "change": 2}, {"keyword": "dental marketing near me", "position": 69, "volume": "210", "cpc": "59.06", "kd": 78, "etv": "0.4", "url": "/industries/dental-marketing-bellingham-wa/", "isNew": true, "change": 0}, {"keyword": "electrician marketing agency", "position": 78, "volume": "210", "cpc": "7.25", "kd": 2, "etv": "0.4", "url": "/industries/electrician-marketing-bellingham-wa/", "isNew": true, "change": 0}, {"keyword": "fairhaven bellingham wa 98225", "position": 23, "volume": "170", "cpc": "0.00", "kd": 17, "etv": "0.4", "url": "/neighborhoods/fairhaven/", "isNew": true, "change": 0}, {"keyword": "hvac marketing agency near me", "position": 99, "volume": "170", "cpc": "76.93", "kd": 41, "etv": "0.3", "url": "/industries/hvac-marketing-bellingham/", "isNew": true, "change": 0}, {"keyword": "internet marketing houston", "position": 35, "volume": "170", "cpc": "0.00", "kd": 37, "etv": "0.4", "url": "/locations/houston/", "isNew": true, "change": 0}, {"keyword": "bellingham seo company", "position": 38, "volume": "140", "cpc": "0.00", "kd": 15, "etv": "0.3", "url": "/digital-marketing-services/seo-bellingham/", "isNew": false, "change": 2}, {"keyword": "internet marketing company houston", "position": 84, "volume": "140", "cpc": "0.00", "kd": 17, "etv": "0.3", "url": "/locations/houston/", "isNew": true, "change": 0}]}, "insights": [{"type": "positive", "icon": "\u2b50", "title": "Massive Keyword Growth", "text": "52 new keywords discovered this period (80% of total). Location pages for Chicago, Phoenix, Houston, and Cape Coral are all being indexed and ranked \u2014 the multi-city strategy is working."}, {"type": "positive", "icon": "\u2b50", "title": "Impressions Up 14.6%", "text": "Google impressions grew from 15,441 to 17,689 month-over-month, indicating expanding search visibility even as the site targets more competitive terms."}, {"type": "positive", "icon": "\u2b50", "title": "SEO Bellingham Climbing", "text": "The core keyword 'seo bellingham' improved 10 positions to rank #31. Continued content and link building should push this toward page-one visibility for this high-intent local term."}, {"type": "warning", "icon": "\u26a0\ufe0f", "title": "Clicks Down 26.7%", "text": "Clicks dropped from 30 to 22 despite impression growth. This is likely because many new rankings are in positions 30+ where click rates are very low. As positions improve, clicks should follow."}, {"type": "positive", "icon": "\u2b50", "title": "GBP Listing Driving Consistent Traffic", "text": "The Google Business Profile listing generates 73% of all GSC clicks (16/22) with a strong average position of 2.6. This is a reliable local traffic source."}, {"type": "warning", "icon": "\u26a0\ufe0f", "title": "Facebook Referral Quality", "text": "Facebook channels (m.facebook.com, lm.facebook.com, l.facebook.com) collectively drive ~31% of referral traffic but with 40-55% bounce rates. Consider optimizing landing pages for social visitors."}]};
+</script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
   :root {
     --bg: #f5f0eb; --surface: #ffffff; --surface-alt: #faf7f4;
     --border: #e8e0d8; --text: #2c2417; --text-secondary: #8c7e6e; --text-muted: #b0a494;
     --accent: #c4550a; --accent-light: #e8764a;
-    --green: #2d7a3a; --green-bg: #eaf5ec;
-    --red: #c4390a; --red-bg: #fdf0eb;
-    --orange: #b5680a; --orange-bg: #fef6eb;
-    --blue: #1a6bb5; --blue-bg: #ebf3fa;
+    --green: #2d7a3a; --green-bg: #eaf5ec; --red: #c4390a; --red-bg: #fdf0eb;
+    --orange: #b5680a; --orange-bg: #fef6eb; --blue: #1a6bb5; --blue-bg: #ebf3fa;
     --header-gradient: linear-gradient(135deg, #2c1810 0%, #4a2c1a 40%, #3d2010 100%);
     --radius: 12px; --radius-sm: 8px;
     --shadow: 0 1px 3px rgba(44,36,23,0.06), 0 1px 2px rgba(44,36,23,0.04);
     --shadow-md: 0 4px 12px rgba(44,36,23,0.08), 0 2px 4px rgba(44,36,23,0.04);
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
   .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
   .report-header { background: var(--header-gradient); padding: 48px 0 44px; position: relative; overflow: hidden; }
   .report-header::before { content: ''; position: absolute; top: -50%; right: -20%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(196,85,10,0.15) 0%, transparent 70%); pointer-events: none; }
   .report-header .container { position: relative; z-index: 1; }
-  .hdr-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 6px 16px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #f0e6d8; margin-bottom: 20px; }
-  .hdr-badge::before { content: ''; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
+  .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 6px 16px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #f0e6d8; margin-bottom: 20px; }
+  .badge::before { content: ''; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
   .header-domain { font-size: 40px; font-weight: 800; color: #ffffff; letter-spacing: -1px; margin-bottom: 6px; }
   .header-subtitle { font-size: 16px; color: #c4b8a8; margin-bottom: 24px; }
   .header-meta { display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; color: #a89880; }
   .header-meta span { display: flex; align-items: center; gap: 6px; }
-  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 0 0 32px; position: relative; z-index: 2; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: -28px 0 32px; position: relative; z-index: 2; }
   .kpi-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow-md); }
   .kpi-label { font-size: 11px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px; }
   .kpi-value { font-size: 36px; font-weight: 800; color: var(--text); line-height: 1.1; letter-spacing: -1px; }
+  .kpi-value.alert { color: var(--red); }
   .kpi-trend { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; margin-top: 8px; padding: 2px 8px; border-radius: 4px; }
   .kpi-trend.up { background: var(--green-bg); color: var(--green); }
   .kpi-trend.down { background: var(--red-bg); color: var(--red); }
-  .kpi-trend.neutral { background: var(--surface-alt); color: var(--text-secondary); }
-  .section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 24px; box-shadow: var(--shadow); }
+  .kpi-trend.neutral { background: var(--surface-alt); color: var(--text-secondary); }  .section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 24px; box-shadow: var(--shadow); }
   .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
   .section-icon { width: 40px; height: 40px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
   .section-icon.orange { background: var(--orange-bg); }
@@ -49,8 +53,14 @@
   .section-icon.red { background: var(--red-bg); }
   .section-number { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); }
   .section-title { font-size: 20px; font-weight: 700; color: var(--text); }
+  .mini-kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+  .mini-kpi { background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px; text-align: center; }
+  .mini-kpi .value { font-size: 22px; font-weight: 800; color: var(--text); }
+  .mini-kpi .label { font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-secondary); margin-top: 4px; }
   table { width: 100%; border-collapse: collapse; }
   thead th { font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-secondary); padding: 12px 16px; text-align: left; border-bottom: 2px solid var(--border); background: var(--surface-alt); }
+  thead th:first-child { border-radius: var(--radius-sm) 0 0 0; }
+  thead th:last-child { border-radius: 0 var(--radius-sm) 0 0; }
   tbody td { padding: 12px 16px; font-size: 13px; border-bottom: 1px solid var(--border); }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr:hover { background: var(--surface-alt); }
@@ -58,9 +68,8 @@
   .rank-badge { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; font-size: 12px; font-weight: 700; }
   .rank-1 { background: #fef3c7; color: #92400e; }
   .rank-2 { background: #e5e7eb; color: #374151; }
-  .rank-3 { background: #fde9d6; color: #9a3412; }
-  .progress-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; margin-top: 4px; }
-  .progress-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-light)); }
+  .rank-3 { background: #fde9d6; color: #9a3412; }  .progress-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; margin-top: 4px; }
+  .progress-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-light)); transition: width 1s ease; }
   .tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 4px; letter-spacing: 0.3px; }
   .tag-green { background: var(--green-bg); color: var(--green); }
   .tag-blue { background: var(--blue-bg); color: var(--blue); }
@@ -75,20 +84,24 @@
   .insight-content h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
   .insight-content p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
   .chart-container { position: relative; height: 280px; margin: 16px 0; }
-  .mini-kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
-  .mini-kpi { background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px; text-align: center; }
-  .mini-kpi .value { font-size: 22px; font-weight: 800; color: var(--text); }
-  .mini-kpi .label { font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-secondary); margin-top: 4px; }
-  .no-data { background: var(--surface-alt); border: 1px dashed var(--border); border-radius: var(--radius-sm); padding: 20px; text-align: center; color: var(--text-muted); font-size: 13px; }
+  .alert-box { display: flex; gap: 12px; align-items: flex-start; background: var(--red-bg); border: 1px solid rgba(196,57,10,0.2); border-radius: var(--radius-sm); padding: 16px; margin-bottom: 20px; font-size: 13px; }
+  .alert-box.warning { background: var(--orange-bg); border-color: rgba(181,104,10,0.2); }
+  .alert-icon { font-size: 18px; flex-shrink: 0; }
   .report-footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-size: 12px; }
   .report-footer a { color: var(--accent); text-decoration: none; }
-  .footer-brand { font-size: 14px; font-weight: 700; color: var(--text-secondary); margin-bottom: 8px; }
-  .ai-summary { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 32px; margin-bottom: 24px; box-shadow: var(--shadow-md); }
+  .report-footer a:hover { text-decoration: underline; }
+  .footer-brand { font-size: 14px; font-weight: 700; color: var(--text-secondary); margin-bottom: 8px; }  .ai-summary { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 32px; margin: -28px 0 24px; position: relative; z-index: 2; box-shadow: var(--shadow-md); }
   .ai-summary-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-  .ai-badge { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1a1a2e, #2c1810); color: #f0e6d8; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 12px; border-radius: 6px; }
-  .ai-badge::before { content: ''; width: 6px; height: 6px; background: #63b3ed; border-radius: 50%; }
+  .ai-summary-header .ai-badge { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1a1a2e, #2c1810); color: #f0e6d8; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 12px; border-radius: 6px; }
+  .ai-summary-header .ai-badge::before { content: ''; width: 6px; height: 6px; background: #63b3ed; border-radius: 50%; animation: pulse-dot 2s infinite; }
+  @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   .ai-summary-header h3 { font-size: 16px; font-weight: 700; color: var(--text); }
   .ai-summary-body { font-size: 14px; line-height: 1.75; color: var(--text); }
+  .ai-summary-body p { margin-bottom: 12px; }
+  .ai-summary-body p:last-child { margin-bottom: 0; }
+  .ai-summary-body strong { color: var(--text); }
+  .ai-summary-body .highlight-stat { display: inline-block; background: var(--green-bg); color: var(--green); font-weight: 700; padding: 1px 8px; border-radius: 4px; font-size: 13px; }
+  .ai-summary-body .highlight-warn { display: inline-block; background: var(--orange-bg); color: var(--orange); font-weight: 700; padding: 1px 8px; border-radius: 4px; font-size: 13px; }
   @media (max-width: 768px) {
     .kpi-grid { grid-template-columns: repeat(2, 1fr); }
     .mini-kpi-row { grid-template-columns: repeat(2, 1fr); }
@@ -98,119 +111,233 @@
 </style>
 </head>
 <body>
+<div id="app"></div>
+<script>
+(function() {
+  const D = REPORT_DATA;
+  document.getElementById('pageTitle').textContent = 'SEO & Analytics Report — ' + D.client.name;  function rankBadge(rank) {
+    if (rank <= 3) return '<span class="rank-badge rank-' + rank + '">' + rank + '</span>';
+    return rank;
+  }
+  function bounceTag(rate, cls) { return '<span class="tag ' + cls + '">' + rate + '</span>'; }
 
-<div class="report-header">
-  <div class="container">
-    <div class="hdr-badge">SEO &amp; Analytics Report</div>
-    <div class="header-domain">stambaughdesigns.co</div>
-    <div class="header-subtitle">Stambaugh Designs — Comprehensive Performance Analysis</div>
-    <div class="header-meta">
-      <span>📅 Feb 22 – Mar 24, 2026</span>
-      <span>📊 Data Sources: GSC · DataForSEO · Rybbit</span>
-      <span>🖨 Generated: March 24, 2026</span>
-    </div>
-  </div>
-</div>
+  // Header
+  var html = '<div class="report-header"><div class="container">' +
+    '<div class="badge">SEO &amp; Analytics Report</div>' +
+    '<div class="header-domain">' + D.client.domain + '</div>' +
+    '<div class="header-subtitle">' + D.client.name + ' — Comprehensive Performance Analysis</div>' +
+    '<div class="header-meta">' +
+    '<span>📅 ' + D.client.reportDateRange + '</span>' +
+    '<span>📊 Data Sources: GSC · DataForSEO · Rybbit</span>' +
+    '<span>🖨 Generated: ' + D.client.generatedDate + '</span>' +
+    '</div></div></div><div class="container">';
 
-<div class="container">
-  <div style="height:28px;"></div>
+  // AI Executive Summary
+  html += '<div class="ai-summary"><div class="ai-summary-header">' +
+    '<span class="ai-badge">AI Analysis</span><h3>Executive Summary</h3></div>' +
+    '<div class="ai-summary-body">' + D.aiSummary + '</div></div>';
 
-  <!-- AI Executive Summary -->
-  <div class="ai-summary">
-    <div class="ai-summary-header">
-      <span class="ai-badge">AI Analysis</span>
-      <h3>Executive Summary</h3>
-    </div>
-    <div class="ai-summary-body"><p>Stambaugh Designs generated <strong>21 organic clicks</strong> from <strong>15.4K impressions</strong> this period, with an average position of <strong>38.2</strong> across Google Search. Click volume adjusted 9% month-over-month, reflecting the compounding impact of Stambaugh Designs' ongoing SEO strategy.</p><p>With <strong>80 total organic keywords</strong> and an estimated traffic value of <strong>$27</strong>, Stambaugh is building meaningful organic visibility in its target market. <strong>69 new keywords</strong> entered rankings this period — a clear signal of expanding topical authority, with <strong>2 keywords moving up</strong> versus 8 declining.</p></div>
-  </div>
+  // KPI Cards
+  html += '<div class="kpi-grid">';
+  D.kpis.forEach(function(k) {
+    html += '<div class="kpi-card"><div class="kpi-label">' + k.label + '</div>' +
+      '<div class="kpi-value">' + k.value + '</div>' +
+      '<div class="kpi-trend ' + k.trendClass + '">' + k.trendText + '</div></div>';
+  });
+  html += '</div>';  // Section 01: Rybbit Analytics
+  if (D.rybbit && D.rybbit.available) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon orange">📈</div><div>' +
+      '<div class="section-number">Section 01</div><div class="section-title">Site Analytics (Rybbit)</div></div></div>';
+    html += '<div class="mini-kpi-row">';
+    D.rybbit.miniKpis.forEach(function(m) {
+      html += '<div class="mini-kpi"><div class="value">' + m.value + '</div><div class="label">' + m.label + '</div></div>';
+    });
+    html += '</div>';
+    if (D.rybbit.secondaryKpis && D.rybbit.secondaryKpis.length) {
+      html += '<div class="mini-kpi-row" style="grid-template-columns: repeat(' + D.rybbit.secondaryKpis.length + ', 1fr);">';
+      D.rybbit.secondaryKpis.forEach(function(m) {
+        var st = m.style ? ' style="' + m.style + '"' : '';
+        html += '<div class="mini-kpi"><div class="value"' + st + '>' + m.value + '</div><div class="label">' + m.label + '</div></div>';
+      });
+      html += '</div>';
+    }
+    if (D.rybbit.alert) {
+      html += '<div class="alert-box ' + D.rybbit.alert.type + '"><span class="alert-icon">⚠️</span><div>' + D.rybbit.alert.html + '</div></div>';
+    }
+    if (D.rybbit.referralSources && D.rybbit.referralSources.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Referral Sources</h4>';
+      html += '<table><thead><tr><th>#</th><th>Source</th><th>Sessions</th><th>Share</th><th>Bounce Rate</th></tr></thead><tbody>';
+      D.rybbit.referralSources.forEach(function(r) {
+        html += '<tr><td>' + rankBadge(r.rank) + '</td><td><strong>' + r.source + '</strong></td><td class="mono">' + r.sessions + '</td><td class="mono">' + r.share + '</td><td>' + bounceTag(r.bounceRate, r.bounceClass) + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }
+    html += '</div>';
+  }  // Section 02: Google Search Console
+  if (D.gsc && D.gsc.available) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon blue">🔍</div><div>' +
+      '<div class="section-number">Section 02</div><div class="section-title">Google Search Console</div></div></div>';
+    html += '<h4 style="font-size:14px;font-weight:700;margin-bottom:4px;">Daily Clicks &amp; Impressions</h4>' +
+      '<p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">' + D.gsc.dateRangeLabel + '</p>' +
+      '<div class="chart-container"><canvas id="dailyChart"></canvas></div>';
+    // Top Queries
+    if (D.gsc.topQueries && D.gsc.topQueries.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin:24px 0 12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Search Queries</h4>';
+      html += '<table><thead><tr><th>#</th><th>Query</th><th>Clicks</th><th>Impressions</th><th>CTR</th><th>Avg Pos</th></tr></thead><tbody>';
+      D.gsc.topQueries.forEach(function(q) {
+        html += '<tr><td>' + rankBadge(q.rank) + '</td><td><strong>' + q.query + '</strong></td><td class="mono">' + q.clicks + '</td><td class="mono">' + q.impressions + '</td><td class="mono">' + q.ctr + '</td><td class="mono">' + q.avgPos + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }
+    // Top Pages
+    if (D.gsc.topPages && D.gsc.topPages.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin:28px 0 12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Pages by Clicks</h4>';
+      html += '<table><thead><tr><th>Page</th><th>Clicks</th><th>Impressions</th><th>CTR</th><th>Avg Pos</th></tr></thead><tbody>';
+      D.gsc.topPages.forEach(function(p) {
+        var ctrSt = p.lowCtr ? ' style="color:var(--red);"' : '';
+        html += '<tr><td><strong>' + p.page + '</strong></td><td class="mono">' + p.clicks + '</td><td class="mono">' + p.impressions + '</td><td class="mono"' + ctrSt + '>' + p.ctr + '</td><td class="mono">' + p.avgPos + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }    // Device & Country
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px;"><div>' +
+      '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Device Split (GSC)</h4>' +
+      '<div class="chart-container" style="height:200px;"><canvas id="deviceChart"></canvas></div></div><div>' +
+      '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Countries (GSC)</h4>' +
+      '<table><thead><tr><th>Country</th><th>Clicks</th></tr></thead><tbody>';
+    D.gsc.countries.forEach(function(c) {
+      html += '<tr><td>' + c.flag + ' ' + c.name + '</td><td class="mono"><strong>' + c.clicks + '</strong></td></tr>';
+    });
+    html += '</tbody></table></div></div>';
+    html += '</div>';
+  }
 
-  <!-- Top KPIs -->
-  
-  <div class="kpi-grid">
-    <div class="kpi-card"><div class="kpi-label">Organic Clicks</div><div class="kpi-value">21</div><span class="kpi-trend down">▼ -8.7%</span></div>
-    <div class="kpi-card"><div class="kpi-label">Impressions</div><div class="kpi-value">15.4K</div><span class="kpi-trend down">▼ -1.1%</span></div>
-    <div class="kpi-card"><div class="kpi-label">Avg. CTR</div><div class="kpi-value">0.14%</div><span class="kpi-trend down">▼ -6.7%</span></div>
-    <div class="kpi-card"><div class="kpi-label">Avg. Position</div><div class="kpi-value">38.2</div><span class="kpi-trend up">▼ -5.9%</span></div>
-  </div>
+  // Section 03: Keyword Visibility
+  if (D.keywords && D.keywords.available) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon green">🌱</div><div>' +
+      '<div class="section-number">Section 03</div><div class="section-title">Organic Keyword Visibility</div></div></div>';
+    html += '<div class="mini-kpi-row">';
+    D.keywords.miniKpis.forEach(function(m) {
+      var st = m.style ? ' style="' + m.style + '"' : '';
+      html += '<div class="mini-kpi"><div class="value"' + st + '>' + m.value + '</div><div class="label">' + m.label + '</div></div>';
+    });
+    html += '</div>';
+    html += '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Keyword Position Distribution</h4>';
+    html += '<table><thead><tr><th>Position Range</th><th>Keywords</th><th>Distribution</th></tr></thead><tbody>';
+    D.keywords.distribution.forEach(function(d) {
+      var barSt = d.barColor ? 'background:' + d.barColor + ';' : '';
+      html += '<tr><td><span class="tag ' + d.tagClass + '">' + d.range + '</span></td><td class="mono"><strong>' + d.count + '</strong></td><td><div class="progress-bar" style="width:200px;"><div class="progress-fill" style="width:' + d.pct + '%;' + barSt + '"></div></div></td></tr>';
+    });
+    html += '</tbody></table>';    html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;">' +
+      '<div class="mini-kpi"><div class="value">' + D.keywords.etv + '<span style="font-size:14px;color:var(--text-secondary);">/mo</span></div><div class="label">Estimated Traffic Value</div></div>' +
+      '<div class="mini-kpi"><div class="value">' + D.keywords.estVisits + '</div><div class="label">Est. Organic Visits/Mo</div></div></div>';
+    html += '<div class="chart-container" style="height:220px;margin-top:16px;"><canvas id="keywordChart"></canvas></div>';
 
-  <!-- Analytics (Rybbit) -->
-  
-  <div class="section">
-    <div class="section-header"><div class="section-icon orange">📈</div><div><div class="section-number">Section 01</div><div class="section-title">Site Analytics (Rybbit)</div></div></div>
-    <div class="mini-kpi-row">
-      <div class="mini-kpi"><div class="value">1.2K</div><div class="label">Sessions</div></div>
-      <div class="mini-kpi"><div class="value">1.7K</div><div class="label">Pageviews</div></div>
-      <div class="mini-kpi"><div class="value">751</div><div class="label">Unique Users</div></div>
-      <div class="mini-kpi"><div class="value">71.7%</div><div class="label">Bounce Rate</div></div>
-    </div>
-    <div class="mini-kpi-row" style="grid-template-columns:repeat(2,1fr);">
-      <div class="mini-kpi"><div class="value">79s</div><div class="label">Avg. Duration</div></div>
-      <div class="mini-kpi"><div class="value">1.46</div><div class="label">Pages / Session</div></div>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px;">
-      <div>
-        <h4 style="font-size:13px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Device Split</h4>
-        <div class="chart-container" style="height:200px;"><canvas id="deviceChart"></canvas></div>
-        <script>new Chart(document.getElementById("deviceChart"),{type:"doughnut",data:{labels:["Desktop", "Mobile"],datasets:[{data:[92.45, 7.55],backgroundColor:["#c4550a","#8c7e6e","#e8e0d8"],borderWidth:0,cutout:"65%"}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:"bottom",labels:{usePointStyle:true,pointStyle:"circle",padding:12,font:{size:11,weight:"500"}}}}}});</script>
-      </div>
-      <div>
-        <h4 style="font-size:13px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Referrers</h4>
-        <table><thead><tr><th>#</th><th>Source</th><th>Visits</th></tr></thead><tbody><tr><td><span class="rank-badge rank-1">1</span></td><td><strong>google.com</strong></td><td class="mono">33</td></tr><tr><td><span class="rank-badge rank-2">2</span></td><td><strong>facebook.com (mobile)</strong></td><td class="mono">41</td></tr><tr><td><span class="rank-badge rank-3">3</span></td><td><strong>youtube.com</strong></td><td class="mono">18</td></tr><tr><td><span class="rank-badge ">4</span></td><td><strong>reddit.com</strong></td><td class="mono">6</td></tr><tr><td><span class="rank-badge ">5</span></td><td><strong>designrush.com</strong></td><td class="mono">5</td></tr><tr><td><span class="rank-badge ">6</span></td><td><strong>chatgpt.com</strong></td><td class="mono">4</td></tr></tbody></table>
-      </div>
-    </div>
-  </div>
+    // Top Keyword Rankings Table
+    if (D.keywords.topRankings && D.keywords.topRankings.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin:28px 0 12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Keyword Rankings</h4>';
+      html += '<div style="overflow-x:auto;"><table><thead><tr><th>#</th><th>Keyword</th><th>Pos</th><th>Change</th><th>Volume</th><th>ETV</th><th>CPC</th><th>KD</th><th>Ranking URL</th></tr></thead><tbody>';
+      D.keywords.topRankings.forEach(function(kw, i) {
+        var changeBadge = '';
+        if (kw.isNew) { changeBadge = '<span class="tag tag-blue" style="font-size:10px;">NEW</span>'; }
+        else if (kw.change > 0) { changeBadge = '<span class="tag tag-green">▲ ' + kw.change + '</span>'; }
+        else if (kw.change < 0) { changeBadge = '<span class="tag tag-red">▼ ' + Math.abs(kw.change) + '</span>'; }
+        else { changeBadge = '<span class="tag" style="background:var(--surface-alt);color:var(--text-secondary);">—</span>'; }
+        var posStyle = kw.position <= 3 ? 'color:var(--green);font-weight:700;' : (kw.position <= 10 ? 'color:var(--blue);font-weight:600;' : '');
+        var kdColor = kw.kd <= 15 ? 'var(--green)' : (kw.kd <= 40 ? 'var(--orange)' : 'var(--red)');
+        html += '<tr><td>' + (i + 1) + '</td><td><strong>' + kw.keyword + '</strong></td>';
+        html += '<td class="mono" style="' + posStyle + '">' + kw.position + '</td>';
+        html += '<td>' + changeBadge + '</td>';
+        html += '<td class="mono">' + kw.volume + '</td>';
+        html += '<td class="mono">' + kw.etv + '</td>';
+        html += '<td class="mono">$' + kw.cpc + '</td>';
+        html += '<td><span style="color:' + kdColor + ';font-weight:600;">' + kw.kd + '</span></td>';
+        html += '<td style="font-size:11px;color:var(--text-secondary);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + kw.url + '</td>';
+        html += '</tr>';
+      });
+      html += '</tbody></table></div>';
+    }
 
-  <!-- GSC Section -->
-  <div class="section">
-    <div class="section-header"><div class="section-icon blue">🔍</div><div><div class="section-number">Section 02</div><div class="section-title">Google Search Console</div></div></div>
-    <h4 style="font-size:13px;font-weight:700;margin-bottom:4px;">Daily Clicks &amp; Impressions</h4>
-    <p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">Feb 22 – Mar 24, 2026</p>
-    <div class="chart-container"><canvas id="dailyChart"></canvas></div><script>new Chart(document.getElementById("dailyChart").getContext("2d"),{type:"bar",data:{labels:["Feb 23", "Feb 27", "Mar 01", "Mar 04", "Mar 08", "Mar 09", "Mar 11", "Mar 12", "Mar 13", "Mar 15", "Mar 16", "Mar 18", "Mar 20", "Mar 22"],datasets:[{label:"Clicks",data:[2, 4, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 0, 0],backgroundColor:"#c4550a",borderRadius:4,barPercentage:0.6,yAxisID:"y",order:2},{label:"Impressions",data:[330, 398, 405, 661, 628, 667, 692, 814, 645, 709, 509, 535, 478, 549],type:"line",borderColor:"#8c7e6e",backgroundColor:"rgba(140,126,110,0.1)",fill:true,tension:0.4,pointRadius:4,pointBackgroundColor:"#8c7e6e",borderWidth:2,yAxisID:"y1",order:1}]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:"index",intersect:false},plugins:{legend:{position:"top",align:"end",labels:{usePointStyle:true,pointStyle:"circle",padding:20,font:{size:11,weight:"600"}}}},scales:{y:{beginAtZero:true,position:"left",title:{display:true,text:"Clicks",font:{size:11,weight:"600"}},grid:{color:"rgba(0,0,0,0.04)"},ticks:{font:{size:11}}},y1:{beginAtZero:true,position:"right",title:{display:true,text:"Impressions",font:{size:11,weight:"600"}},grid:{display:false},ticks:{font:{size:11}}},x:{grid:{display:false},ticks:{font:{size:10}}}}}}); </script>
-    <div class="no-data" style="margin-top:16px;">No query data available for this period.</div>
-  </div>
+    html += '</div>';
+  }
 
-  <!-- Keyword Visibility -->
-  <div class="section">
-    <div class="section-header"><div class="section-icon green">🌱</div><div><div class="section-number">Section 03</div><div class="section-title">Organic Keyword Visibility</div></div></div>
-    <div class="mini-kpi-row">
-      <div class="mini-kpi"><div class="value">80</div><div class="label">Total Keywords</div></div>
-      <div class="mini-kpi"><div class="value" style="color:var(--green);">+69</div><div class="label">New Keywords</div></div>
-      <div class="mini-kpi"><div class="value" style="color:var(--green);">2 ▲</div><div class="label">Moving Up</div></div>
-      <div class="mini-kpi"><div class="value" style="color:var(--red);">8 ▼</div><div class="label">Moving Down</div></div>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
-      <div>
-        <h4 style="font-size:13px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Position Distribution</h4>
-        <table>
-          <thead><tr><th>Range</th><th>Keywords</th><th>Share</th></tr></thead>
-          <tbody><tr><td><span class="tag tag-green">Top 3</span></td><td class="mono"><strong>1</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:1%;background:#2d7a3a;"></div></div></td></tr><tr><td><span class="tag tag-blue">Pos 4–10</span></td><td class="mono"><strong>0</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:0%;background:#1a6bb5;"></div></div></td></tr><tr><td><span class="tag tag-blue">Pos 11–20</span></td><td class="mono"><strong>1</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:1%;background:#1a6bb5;"></div></div></td></tr><tr><td><span class="tag tag-orange">Pos 21+</span></td><td class="mono"><strong>78</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:98%;background:#b5680a;"></div></div></td></tr></tbody>
-        </table>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;">
-          <div class="mini-kpi"><div class="value">$27</div><div class="label">Est. Traffic Value</div></div>
-          <div class="mini-kpi"><div class="value">310</div><div class="label">Domain Rank (MDR)</div></div>
-        </div>
-      </div>
-      <div>
-        <h4 style="font-size:13px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Keyword Distribution Chart</h4>
-        <div class="chart-container" style="height:220px;"><canvas id="kwChart"></canvas></div>
-        <script>new Chart(document.getElementById("kwChart").getContext("2d"),{type:"bar",data:{labels:["Top 3", "Pos 4-10", "Pos 11-20", "Pos 21+"],datasets:[{label:"Keywords",data:[1, 0, 1, 78],backgroundColor:["#2d7a3a","#1a6bb5","#b5680a","#c4390a"],borderRadius:6,barPercentage:0.65}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:"y",plugins:{legend:{display:false}},scales:{x:{beginAtZero:true,grid:{color:"rgba(0,0,0,0.04)"},ticks:{font:{size:11}}},y:{grid:{display:false},ticks:{font:{size:11,weight:"600"}}}}}});</script>
-      </div>
-    </div>
-  </div>
+  // Section 04: Insights & Recommendations
+  if (D.insights && D.insights.length) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon red">💡</div><div>' +
+      '<div class="section-number">Section 04</div><div class="section-title">Key Insights &amp; Recommendations</div></div></div>';
+    D.insights.forEach(function(ins) {
+      html += '<div class="insight ' + ins.type + '"><span class="insight-icon">' + ins.icon + '</span>' +
+        '<div class="insight-content"><h4>' + ins.title + '</h4><p>' + ins.text + '</p></div></div>';
+    });
+    html += '</div>';
+  }
 
-  <!-- Insights -->
-  <div class="section">
-    <div class="section-header"><div class="section-icon red">💡</div><div><div class="section-number">Section 04</div><div class="section-title">Key Insights &amp; Recommendations</div></div></div>
-    <div class="insight positive"><span class="insight-icon">✅</span><div class="insight-content"><h4>1,166 Sessions & 751 Unique Users via Rybbit</h4><p>Stambaugh Designs attracted strong direct and referral traffic this period. Facebook and Google together account for nearly half of all referral traffic, validating the multi-channel presence Stambaugh Designs has built.</p></div></div><div class="insight positive"><span class="insight-icon">✅</span><div class="insight-content"><h4>Average Position Improved to 38.2 (from 40.6)</h4><p>A 2.4-position improvement across 15,438 impressions represents measurable progress moving toward page 2 and eventually page 1 for competitive design/marketing queries.</p></div></div><div class="insight positive"><span class="insight-icon">✅</span><div class="insight-content"><h4>69 New Keywords Indexed</h4><p>The site gained 69 new keyword entries this period, signaling Google is expanding its understanding of Stambaugh Designs as a Bellingham-area marketing authority.</p></div></div><div class="insight warning"><span class="insight-icon">⚠️</span><div class="insight-content"><h4>CTR Improvement Opportunity</h4><p>With 0.14% CTR across 15,438 impressions, refining meta descriptions and title tags for the top-impression pages could unlock significant click volume without additional ranking improvements.</p></div></div>
-  </div>
+  // Footer
+  html += '<div class="report-footer"><div class="footer-brand">Stambaugh Designs</div>' +
+    '<p>Data sources: Google Search Console · DataForSEO · Rybbit Analytics</p>' +
+    '<p style="margin-top:8px;">Questions? Contact <a href="mailto:hello@stambaughdesigns.co">hello@stambaughdesigns.co</a> · <a href="https://stambaughdesigns.co">stambaughdesigns.co</a></p>' +
+    '</div></div>';
 
-  <!-- Footer -->
-  <div class="report-footer">
-    <div class="footer-brand">Stambaugh Designs</div>
-    <p>Data sources: Google Search Console · DataForSEO · Rybbit Analytics</p>
-    <p style="margin-top:8px;">Questions? Contact <a href="mailto:hello@stambaughdesigns.co">hello@stambaughdesigns.co</a> · <a href="https://stambaughdesigns.co">stambaughdesigns.co</a></p>
-  </div>
-</div>
+  document.getElementById('app').innerHTML = html;  // ═══ CHARTS ═══
+  var fontFamily = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
+  Chart.defaults.font.family = fontFamily;
+  Chart.defaults.color = '#8c7e6e';
 
+  // Daily Clicks & Impressions
+  if (D.gsc && D.gsc.available && D.gsc.dailyChart.labels.length) {
+    new Chart(document.getElementById('dailyChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: D.gsc.dailyChart.labels,
+        datasets: [
+          { label: 'Clicks', data: D.gsc.dailyChart.clicks, backgroundColor: '#c4550a', borderRadius: 4, barPercentage: 0.6, yAxisID: 'y', order: 2 },
+          { label: 'Impressions', data: D.gsc.dailyChart.impressions, type: 'line', borderColor: '#8c7e6e', backgroundColor: 'rgba(140,126,110,0.1)', fill: true, tension: 0.4, pointRadius: 4, pointBackgroundColor: '#8c7e6e', borderWidth: 2, yAxisID: 'y1', order: 1 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { position: 'top', align: 'end', labels: { usePointStyle: true, pointStyle: 'circle', padding: 20, font: { size: 11, weight: '600' } } } },
+        scales: {
+          y: { beginAtZero: true, position: 'left', title: { display: true, text: 'Clicks', font: { size: 11, weight: '600' } }, grid: { color: 'rgba(0,0,0,0.04)' }, ticks: { font: { size: 11 } } },
+          y1: { beginAtZero: true, position: 'right', title: { display: true, text: 'Impressions', font: { size: 11, weight: '600' } }, grid: { display: false }, ticks: { font: { size: 11 } } },
+          x: { grid: { display: false }, ticks: { font: { size: 10 } } }
+        }
+      }
+    });
+  }  // Device Doughnut
+  if (D.gsc && D.gsc.available && D.gsc.deviceChart) {
+    new Chart(document.getElementById('deviceChart').getContext('2d'), {
+      type: 'doughnut',
+      data: {
+        labels: D.gsc.deviceChart.labels,
+        datasets: [{ data: D.gsc.deviceChart.data, backgroundColor: ['#c4550a', '#8c7e6e', '#e8e0d8'], borderWidth: 0, cutout: '65%' }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom', labels: { usePointStyle: true, pointStyle: 'circle', padding: 12, font: { size: 11, weight: '500' } } } }
+      }
+    });
+  }
+
+  // Keyword Distribution
+  if (D.keywords && D.keywords.available && D.keywords.chartData) {
+    new Chart(document.getElementById('keywordChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['Top 3', 'Pos 4–10', 'Pos 11–20', 'Pos 21–50', 'Pos 51–100'],
+        datasets: [{ label: 'Keywords', data: D.keywords.chartData, backgroundColor: ['#2d7a3a', '#1a6bb5', '#1a6bb5', '#b5680a', '#c4390a'], borderRadius: 6, barPercentage: 0.65 }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.04)' }, ticks: { font: { size: 11 } } },
+          y: { grid: { display: false }, ticks: { font: { size: 11, weight: '600' } } }
+        }
+      }
+    });
+  }
+})();
+</script>
 </body>
 </html>
