@@ -3,44 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEO &amp; Analytics Report — Round Rock Plumbing</title>
+<title id="pageTitle">SEO &amp; Analytics Report</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+// ══════════════════════════════════════════════════════════════
+//  REPORT DATA — This is the ONLY section that changes per
+//  client/month. The scheduled task replaces this block.
+// ══════════════════════════════════════════════════════════════
+const REPORT_DATA = {"client": {"domain": "roundrockplumbing.co", "name": "Round Rock Plumbing", "reportDateRange": "Mar 3 \u2013 Apr 2, 2026", "generatedDate": "April 6, 2026"}, "aiSummary": "<p>March was an outstanding month for <span class=\"highlight-stat\">Round Rock Plumbing</span>, with the site achieving remarkable gains across every key metric. Google Search Console recorded <span class=\"highlight-stat\">111 clicks</span> and <span class=\"highlight-stat\">58,380 impressions</span> \u2014 representing a <span class=\"highlight-stat\">+13% increase in clicks</span> and an extraordinary <span class=\"highlight-stat\">+45% surge in impressions</span> compared to the prior period. This reflects Stambaugh Designs\u2019 continued expansion of keyword coverage and on-page authority for one of the most competitive plumbing markets in Central Texas.</p><p>The most exciting development this period is keyword dominance: Round Rock Plumbing now holds <span class=\"highlight-stat\">#1 organic rankings</span> for eight high-value keyword variations including \u201cplumber in round rock texas,\u201d \u201cplumbers in round rock,\u201d \u201cplumbing round rock,\u201d and \u201cround rock texas plumber\u201d \u2014 all with 2,400 monthly searches and CPCs exceeding $48 each. A total of <span class=\"highlight-stat\">106 keywords moved up</span> and <span class=\"highlight-stat\">106 brand-new keywords entered rankings</span>, with zero keywords lost.</p><p>The content strategy is delivering measurable results. The drain cleaner article drove <span class=\"highlight-stat\">39 clicks</span> this period with national reach, and the \u201cvomit in toilet\u201d blog post ranks position 8 for a 4,400-monthly-search keyword. This informational content builds domain authority that directly strengthens local ranking performance for commercial terms.</p><p>Rybbit analytics shows <span class=\"highlight-stat\">286 sessions</span> and <span class=\"highlight-stat\">395 pageviews</span>, with Google driving 78% of referral sessions. Session duration of <span class=\"highlight-stat\">46 seconds</span> is typical for service sites where users often call immediately from the homepage rather than browsing further. <span class=\"highlight-warn\">Bounce rate at 77.6%</span> should be monitored, though intent-based plumbing searches frequently convert via phone call before exploring other pages.</p><p>With an estimated organic traffic value of <span class=\"highlight-stat\">$6,521/month</span> \u2014 what it would cost in paid ads to match this visibility \u2014 and 106 keywords improving positions, Round Rock Plumbing heads into Q2 with exceptional momentum and a growing competitive moat in the local search landscape.</p>", "kpis": [{"label": "Total Clicks (GSC)", "value": "111", "trendClass": "up", "trendText": "\u25b2 +13%"}, {"label": "Impressions (GSC)", "value": "58,380", "trendClass": "up", "trendText": "\u25b2 +45%"}, {"label": "Avg CTR (GSC)", "value": "0.19%", "trendClass": "down", "trendText": "\u25bc -20%"}, {"label": "Avg Position (GSC)", "value": "18.1", "trendClass": "up", "trendText": "\u25b2 +4.2 pos"}], "rybbit": {"available": true, "miniKpis": [{"value": "286", "label": "Sessions"}, {"value": "395", "label": "Pageviews"}, {"value": "251", "label": "Unique Visitors"}, {"value": "1.4", "label": "Pages/Session"}], "secondaryKpis": [{"value": "46s", "label": "Avg Duration", "style": ""}, {"value": "77.6%", "label": "Bounce Rate (All)", "style": ""}, {"value": "72.6%", "label": "Bounce Rate (US)", "style": ""}], "alert": null, "referralSources": [{"rank": 1, "source": "google.com", "sessions": "123", "share": "78.3%", "bounceRate": "69.1%", "bounceClass": "tag-red"}, {"rank": 2, "source": "bing.com", "sessions": "10", "share": "6.4%", "bounceRate": "80.0%", "bounceClass": "tag-red"}, {"rank": 3, "source": "m.facebook.com", "sessions": "9", "share": "5.7%", "bounceRate": "55.6%", "bounceClass": "tag-orange"}, {"rank": 4, "source": "duckduckgo.com", "sessions": "3", "share": "1.9%", "bounceRate": "100%", "bounceClass": "tag-red"}, {"rank": 5, "source": "facebook.com", "sessions": "2", "share": "1.3%", "bounceRate": "50.0%", "bounceClass": "tag-orange"}]}, "gsc": {"available": true, "dailyChart": {"labels": ["Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13", "Mar 14", "Mar 15", "Mar 16", "Mar 17", "Mar 18", "Mar 19", "Mar 20", "Mar 21", "Mar 22", "Mar 23", "Mar 24", "Mar 25", "Mar 26", "Mar 27", "Mar 28", "Mar 29", "Mar 30", "Mar 31", "Apr 1"], "clicks": [6, 3, 2, 4, 4, 10, 6, 1, 0, 4, 3, 5, 7, 2, 2, 3, 4, 4, 3, 5, 2, 8, 3, 2, 3, 3, 1, 5, 4, 2], "impressions": [1954, 2119, 2151, 1811, 1858, 1720, 1890, 2360, 1805, 2641, 1893, 1979, 1484, 1567, 1829, 1589, 1803, 1724, 1692, 1416, 1549, 4220, 1677, 3556, 1773, 1821, 1313, 1711, 2006, 1469]}, "dateRangeLabel": "Mar 3 \u2013 Apr 2, 2026", "topQueries": [{"rank": 1, "query": "best drain cleaner for pvc pipes", "clicks": "7", "impressions": "782", "ctr": "0.9%", "avgPos": "3.8"}, {"rank": 2, "query": "round rock plumbing", "clicks": "6", "impressions": "268", "ctr": "2.2%", "avgPos": "8.5"}, {"rank": 3, "query": "round rock plumber", "clicks": "3", "impressions": "200", "ctr": "1.5%", "avgPos": "20.5"}, {"rank": 4, "query": "plumbing round rock", "clicks": "3", "impressions": "231", "ctr": "1.3%", "avgPos": "7.5"}, {"rank": 5, "query": "plumbers round rock", "clicks": "3", "impressions": "333", "ctr": "0.9%", "avgPos": "16.7"}, {"rank": 6, "query": "what drain cleaner is safe for pvc pipes", "clicks": "2", "impressions": "69", "ctr": "2.9%", "avgPos": "1.7"}, {"rank": 7, "query": "round rock plumbers", "clicks": "2", "impressions": "143", "ctr": "1.4%", "avgPos": "9.5"}, {"rank": 8, "query": "plumbers near me", "clicks": "2", "impressions": "521", "ctr": "0.4%", "avgPos": "15.5"}, {"rank": 9, "query": "plumber near me", "clicks": "2", "impressions": "1,679", "ctr": "0.1%", "avgPos": "9.4"}, {"rank": 10, "query": "why is my shower making a squealing noise", "clicks": "1", "impressions": "1", "ctr": "100%", "avgPos": "27.0"}], "topPages": [{"page": "/", "clicks": "50", "impressions": "23,122", "ctr": "0.2%", "avgPos": "11.2", "lowCtr": false}, {"page": "/best-drain-cleaners-for-plastic-pipes-our-top-picks/", "clicks": "39", "impressions": "7,004", "ctr": "0.6%", "avgPos": "13.0", "lowCtr": false}, {"page": "/plumbing-questions-will-vomit-ruin-your-toilet-drain/", "clicks": "6", "impressions": "2,776", "ctr": "0.2%", "avgPos": "5.1", "lowCtr": false}, {"page": "/best-drain-cleaning-methods-chemical-vs-natural/", "clicks": "5", "impressions": "3,274", "ctr": "0.2%", "avgPos": "6.7", "lowCtr": false}, {"page": "/why-is-my-shower-squealing-understanding-the-noises/", "clicks": "2", "impressions": "1,034", "ctr": "0.2%", "avgPos": "11.3", "lowCtr": false}, {"page": "/hard-water-vs-soft-water-effects-plumbing/", "clicks": "2", "impressions": "365", "ctr": "0.5%", "avgPos": "5.1", "lowCtr": false}, {"page": "/contact/", "clicks": "2", "impressions": "1,341", "ctr": "0.1%", "avgPos": "36.9", "lowCtr": true}, {"page": "/abs-vs-pvc-pipes-which-one-is-better/", "clicks": "2", "impressions": "1,222", "ctr": "0.2%", "avgPos": "19.5", "lowCtr": false}], "deviceChart": {"labels": ["Mobile", "Desktop", "Tablet"], "data": [62, 46, 3]}, "countries": [{"flag": "\ud83c\uddfa\ud83c\uddf8", "name": "United States", "clicks": "92"}, {"flag": "\ud83c\udde6\ud83c\uddfa", "name": "Australia", "clicks": "4"}, {"flag": "\ud83c\uddee\ud83c\uddf3", "name": "India", "clicks": "2"}, {"flag": "\ud83c\uddea\ud83c\uddf8", "name": "Spain", "clicks": "2"}, {"flag": "\ud83c\udde8\ud83c\udde6", "name": "Canada", "clicks": "2"}]}, "keywords": {"available": true, "miniKpis": [{"value": "226", "label": "Total Keywords"}, {"value": "+106", "label": "New Keywords", "style": "color: var(--green);"}, {"value": "106 \u25b2", "label": "Moving Up", "style": "color: var(--green);"}, {"value": "14 \u25bc", "label": "Moving Down", "style": "color: var(--red);"}], "distribution": [{"range": "Top 3", "tagClass": "tag-green", "count": "11", "pct": 5, "barColor": "var(--green)"}, {"range": "Pos 4 \u2013 10", "tagClass": "tag-blue", "count": "5", "pct": 2, "barColor": ""}, {"range": "Pos 11 \u2013 20", "tagClass": "tag-blue", "count": "15", "pct": 7, "barColor": ""}, {"range": "Pos 21 \u2013 50", "tagClass": "tag-orange", "count": "124", "pct": 55, "barColor": "var(--orange)"}, {"range": "Pos 51 \u2013 100", "tagClass": "tag-red", "count": "71", "pct": 31, "barColor": "var(--red)"}], "etv": "$6,521", "estVisits": "~4,082", "chartData": [11, 5, 15, 124, 71], "topRankings": [{"keyword": "plumber in round rock texas", "position": 1, "volume": "2,400", "cpc": "48.42", "kd": 20, "etv": "729.6", "url": "/", "isNew": false, "change": 0}, {"keyword": "plumber round rock", "position": 1, "volume": "2,400", "cpc": "48.42", "kd": 18, "etv": "729.6", "url": "/", "isNew": false, "change": 0}, {"keyword": "plumbers in round rock", "position": 1, "volume": "2,400", "cpc": "48.42", "kd": 20, "etv": "729.6", "url": "/", "isNew": true, "change": 0}, {"keyword": "plumbers round rock texas", "position": 1, "volume": "2,400", "cpc": "48.42", "kd": 12, "etv": "729.6", "url": "/", "isNew": true, "change": 0}, {"keyword": "plumbing round rock", "position": 1, "volume": "2,400", "cpc": "48.42", "kd": 21, "etv": "729.6", "url": "/", "isNew": false, "change": 0}, {"keyword": "plumbing round rock texas", "position": 1, "volume": "2,400", "cpc": "48.42", "kd": 21, "etv": "729.6", "url": "/", "isNew": true, "change": 0}, {"keyword": "round rock texas plumber", "position": 1, "volume": "2,400", "cpc": "48.42", "kd": 21, "etv": "729.6", "url": "/", "isNew": true, "change": 0}, {"keyword": "round rock texas plumbers", "position": 1, "volume": "2,400", "cpc": "48.42", "kd": 18, "etv": "729.6", "url": "/", "isNew": false, "change": 0}, {"keyword": "plumbers in round rock tx", "position": 2, "volume": "2,400", "cpc": "48.42", "kd": 18, "etv": "388.8", "url": "/", "isNew": false, "change": 0}, {"keyword": "vomit in toilet", "position": 8, "volume": "4,400", "cpc": "0.00", "kd": 0, "etv": "86.7", "url": "/plumbing-questions-will-vomit-ruin-your-toilet-drain/", "isNew": true, "change": 0}, {"keyword": "plumbers in austin texas", "position": 37, "volume": "8,100", "cpc": "38.71", "kd": 14, "etv": "17.0", "url": "/", "isNew": true, "change": 0}, {"keyword": "plumbers in round rock texas", "position": 11, "volume": "2,400", "cpc": "48.42", "kd": 6, "etv": "21.8", "url": "/", "isNew": false, "change": 0}, {"keyword": "plumber round rock tx", "position": 12, "volume": "2,400", "cpc": "48.42", "kd": 6, "etv": "18.0", "url": "/", "isNew": false, "change": 0}, {"keyword": "viking plumber", "position": 13, "volume": "1,300", "cpc": "12.70", "kd": 0, "etv": "7.7", "url": "/", "isNew": false, "change": 0}, {"keyword": "abs vs pvc", "position": 36, "volume": "2,400", "cpc": "0.05", "kd": 0, "etv": "5.0", "url": "/abs-vs-pvc-pipes-which-one-is-better/", "isNew": false, "change": 0}, {"keyword": "pvc vs abs plastic", "position": 23, "volume": "2,400", "cpc": "0.05", "kd": 0, "etv": "5.0", "url": "/abs-vs-pvc-pipes-which-one-is-better/", "isNew": false, "change": 0}, {"keyword": "abs piping vs pvc", "position": 27, "volume": "1,000", "cpc": "0.15", "kd": 0, "etv": "2.1", "url": "/abs-vs-pvc-pipes-which-one-is-better/", "isNew": false, "change": 0}, {"keyword": "abs vs pvc pipe", "position": 41, "volume": "1,000", "cpc": "0.15", "kd": 0, "etv": "2.1", "url": "/abs-vs-pvc-pipes-which-one-is-better/", "isNew": false, "change": 0}, {"keyword": "abs plastic pipe vs pvc", "position": 36, "volume": "1,000", "cpc": "0.15", "kd": 0, "etv": "2.1", "url": "/abs-vs-pvc-pipes-which-one-is-better/", "isNew": false, "change": 0}, {"keyword": "abs pipe vs pvc", "position": 43, "volume": "1,000", "cpc": "0.15", "kd": 0, "etv": "2.1", "url": "/abs-vs-pvc-pipes-which-one-is-better/", "isNew": false, "change": 0}]}, "insights": [{"type": "positive", "icon": "\u2b50", "title": "#1 Rankings for 8 High-Value Plumbing Terms", "text": "Round Rock Plumbing dominates the top organic position for variations of 'plumber round rock texas' \u2014 each with 2,400 monthly searches and $48+ CPCs, representing extraordinary commercial value."}, {"type": "positive", "icon": "\u2b50", "title": "Impressions Up +45% \u2014 Massive Visibility Expansion", "text": "Search impressions jumped from 40,130 to 58,380, with 106 keywords moving up and 106 new keywords entering rankings. This explosive growth reflects the compounding effect of ongoing content and SEO investment."}, {"type": "positive", "icon": "\u2b50", "title": "Blog Content Driving $6,521/mo in Traffic Value", "text": "Informational content like the drain cleaner and PVC pipe articles builds domain authority and drives national traffic. Estimated monthly organic traffic value now stands at $6,521 \u2014 equivalent ad spend to replicate this reach."}, {"type": "warning", "icon": "\u26a0\ufe0f", "title": "Homepage CTR Opportunity (23K Impressions, 0.2% CTR)", "text": "The homepage appeared 23,122 times in search results but only earned 50 clicks. A compelling, locally-targeted title tag could significantly improve click-through rate."}, {"type": "positive", "icon": "\u2b50", "title": "Zero Keywords Lost", "text": "Despite rapid keyword expansion with 106 new entries, no previously ranked keywords were lost. This demonstrates stable, sustainable ranking growth rather than volatile short-term spikes."}]};
+</script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
   :root {
     --bg: #f5f0eb; --surface: #ffffff; --surface-alt: #faf7f4;
     --border: #e8e0d8; --text: #2c2417; --text-secondary: #8c7e6e; --text-muted: #b0a494;
     --accent: #c4550a; --accent-light: #e8764a;
-    --green: #2d7a3a; --green-bg: #eaf5ec;
-    --red: #c4390a; --red-bg: #fdf0eb;
-    --orange: #b5680a; --orange-bg: #fef6eb;
-    --blue: #1a6bb5; --blue-bg: #ebf3fa;
+    --green: #2d7a3a; --green-bg: #eaf5ec; --red: #c4390a; --red-bg: #fdf0eb;
+    --orange: #b5680a; --orange-bg: #fef6eb; --blue: #1a6bb5; --blue-bg: #ebf3fa;
     --header-gradient: linear-gradient(135deg, #2c1810 0%, #4a2c1a 40%, #3d2010 100%);
     --radius: 12px; --radius-sm: 8px;
     --shadow: 0 1px 3px rgba(44,36,23,0.06), 0 1px 2px rgba(44,36,23,0.04);
     --shadow-md: 0 4px 12px rgba(44,36,23,0.08), 0 2px 4px rgba(44,36,23,0.04);
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
   .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
   .report-header { background: var(--header-gradient); padding: 48px 0 44px; position: relative; overflow: hidden; }
   .report-header::before { content: ''; position: absolute; top: -50%; right: -20%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(196,85,10,0.15) 0%, transparent 70%); pointer-events: none; }
   .report-header .container { position: relative; z-index: 1; }
-  .hdr-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 6px 16px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #f0e6d8; margin-bottom: 20px; }
-  .hdr-badge::before { content: ''; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
+  .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 6px 16px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #f0e6d8; margin-bottom: 20px; }
+  .badge::before { content: ''; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
   .header-domain { font-size: 40px; font-weight: 800; color: #ffffff; letter-spacing: -1px; margin-bottom: 6px; }
   .header-subtitle { font-size: 16px; color: #c4b8a8; margin-bottom: 24px; }
   .header-meta { display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; color: #a89880; }
   .header-meta span { display: flex; align-items: center; gap: 6px; }
-  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 0 0 32px; position: relative; z-index: 2; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: -28px 0 32px; position: relative; z-index: 2; }
   .kpi-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow-md); }
   .kpi-label { font-size: 11px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px; }
   .kpi-value { font-size: 36px; font-weight: 800; color: var(--text); line-height: 1.1; letter-spacing: -1px; }
+  .kpi-value.alert { color: var(--red); }
   .kpi-trend { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; margin-top: 8px; padding: 2px 8px; border-radius: 4px; }
   .kpi-trend.up { background: var(--green-bg); color: var(--green); }
   .kpi-trend.down { background: var(--red-bg); color: var(--red); }
-  .kpi-trend.neutral { background: var(--surface-alt); color: var(--text-secondary); }
-  .section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 24px; box-shadow: var(--shadow); }
+  .kpi-trend.neutral { background: var(--surface-alt); color: var(--text-secondary); }  .section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 24px; box-shadow: var(--shadow); }
   .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
   .section-icon { width: 40px; height: 40px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
   .section-icon.orange { background: var(--orange-bg); }
@@ -49,8 +53,14 @@
   .section-icon.red { background: var(--red-bg); }
   .section-number { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); }
   .section-title { font-size: 20px; font-weight: 700; color: var(--text); }
+  .mini-kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+  .mini-kpi { background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px; text-align: center; }
+  .mini-kpi .value { font-size: 22px; font-weight: 800; color: var(--text); }
+  .mini-kpi .label { font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-secondary); margin-top: 4px; }
   table { width: 100%; border-collapse: collapse; }
   thead th { font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-secondary); padding: 12px 16px; text-align: left; border-bottom: 2px solid var(--border); background: var(--surface-alt); }
+  thead th:first-child { border-radius: var(--radius-sm) 0 0 0; }
+  thead th:last-child { border-radius: 0 var(--radius-sm) 0 0; }
   tbody td { padding: 12px 16px; font-size: 13px; border-bottom: 1px solid var(--border); }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr:hover { background: var(--surface-alt); }
@@ -58,9 +68,8 @@
   .rank-badge { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; font-size: 12px; font-weight: 700; }
   .rank-1 { background: #fef3c7; color: #92400e; }
   .rank-2 { background: #e5e7eb; color: #374151; }
-  .rank-3 { background: #fde9d6; color: #9a3412; }
-  .progress-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; margin-top: 4px; }
-  .progress-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-light)); }
+  .rank-3 { background: #fde9d6; color: #9a3412; }  .progress-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; margin-top: 4px; }
+  .progress-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-light)); transition: width 1s ease; }
   .tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 4px; letter-spacing: 0.3px; }
   .tag-green { background: var(--green-bg); color: var(--green); }
   .tag-blue { background: var(--blue-bg); color: var(--blue); }
@@ -75,20 +84,24 @@
   .insight-content h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
   .insight-content p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
   .chart-container { position: relative; height: 280px; margin: 16px 0; }
-  .mini-kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
-  .mini-kpi { background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px; text-align: center; }
-  .mini-kpi .value { font-size: 22px; font-weight: 800; color: var(--text); }
-  .mini-kpi .label { font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-secondary); margin-top: 4px; }
-  .no-data { background: var(--surface-alt); border: 1px dashed var(--border); border-radius: var(--radius-sm); padding: 20px; text-align: center; color: var(--text-muted); font-size: 13px; }
+  .alert-box { display: flex; gap: 12px; align-items: flex-start; background: var(--red-bg); border: 1px solid rgba(196,57,10,0.2); border-radius: var(--radius-sm); padding: 16px; margin-bottom: 20px; font-size: 13px; }
+  .alert-box.warning { background: var(--orange-bg); border-color: rgba(181,104,10,0.2); }
+  .alert-icon { font-size: 18px; flex-shrink: 0; }
   .report-footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-size: 12px; }
   .report-footer a { color: var(--accent); text-decoration: none; }
-  .footer-brand { font-size: 14px; font-weight: 700; color: var(--text-secondary); margin-bottom: 8px; }
-  .ai-summary { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 32px; margin-bottom: 24px; box-shadow: var(--shadow-md); }
+  .report-footer a:hover { text-decoration: underline; }
+  .footer-brand { font-size: 14px; font-weight: 700; color: var(--text-secondary); margin-bottom: 8px; }  .ai-summary { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 32px; margin: -28px 0 24px; position: relative; z-index: 2; box-shadow: var(--shadow-md); }
   .ai-summary-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-  .ai-badge { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1a1a2e, #2c1810); color: #f0e6d8; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 12px; border-radius: 6px; }
-  .ai-badge::before { content: ''; width: 6px; height: 6px; background: #63b3ed; border-radius: 50%; }
+  .ai-summary-header .ai-badge { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1a1a2e, #2c1810); color: #f0e6d8; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 12px; border-radius: 6px; }
+  .ai-summary-header .ai-badge::before { content: ''; width: 6px; height: 6px; background: #63b3ed; border-radius: 50%; animation: pulse-dot 2s infinite; }
+  @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   .ai-summary-header h3 { font-size: 16px; font-weight: 700; color: var(--text); }
   .ai-summary-body { font-size: 14px; line-height: 1.75; color: var(--text); }
+  .ai-summary-body p { margin-bottom: 12px; }
+  .ai-summary-body p:last-child { margin-bottom: 0; }
+  .ai-summary-body strong { color: var(--text); }
+  .ai-summary-body .highlight-stat { display: inline-block; background: var(--green-bg); color: var(--green); font-weight: 700; padding: 1px 8px; border-radius: 4px; font-size: 13px; }
+  .ai-summary-body .highlight-warn { display: inline-block; background: var(--orange-bg); color: var(--orange); font-weight: 700; padding: 1px 8px; border-radius: 4px; font-size: 13px; }
   @media (max-width: 768px) {
     .kpi-grid { grid-template-columns: repeat(2, 1fr); }
     .mini-kpi-row { grid-template-columns: repeat(2, 1fr); }
@@ -98,100 +111,233 @@
 </style>
 </head>
 <body>
+<div id="app"></div>
+<script>
+(function() {
+  const D = REPORT_DATA;
+  document.getElementById('pageTitle').textContent = 'SEO & Analytics Report — ' + D.client.name;  function rankBadge(rank) {
+    if (rank <= 3) return '<span class="rank-badge rank-' + rank + '">' + rank + '</span>';
+    return rank;
+  }
+  function bounceTag(rate, cls) { return '<span class="tag ' + cls + '">' + rate + '</span>'; }
 
-<div class="report-header">
-  <div class="container">
-    <div class="hdr-badge">SEO &amp; Analytics Report</div>
-    <div class="header-domain">roundrockplumbing.co</div>
-    <div class="header-subtitle">Round Rock Plumbing — Comprehensive Performance Analysis</div>
-    <div class="header-meta">
-      <span>📅 Feb 22 – Mar 24, 2026</span>
-      <span>📊 Data Sources: GSC · DataForSEO</span>
-      <span>🖨 Generated: March 24, 2026</span>
-    </div>
-  </div>
-</div>
+  // Header
+  var html = '<div class="report-header"><div class="container">' +
+    '<div class="badge">SEO &amp; Analytics Report</div>' +
+    '<div class="header-domain">' + D.client.domain + '</div>' +
+    '<div class="header-subtitle">' + D.client.name + ' — Comprehensive Performance Analysis</div>' +
+    '<div class="header-meta">' +
+    '<span>📅 ' + D.client.reportDateRange + '</span>' +
+    '<span>📊 Data Sources: GSC · DataForSEO · Rybbit</span>' +
+    '<span>🖨 Generated: ' + D.client.generatedDate + '</span>' +
+    '</div></div></div><div class="container">';
 
-<div class="container">
-  <div style="height:28px;"></div>
+  // AI Executive Summary
+  html += '<div class="ai-summary"><div class="ai-summary-header">' +
+    '<span class="ai-badge">AI Analysis</span><h3>Executive Summary</h3></div>' +
+    '<div class="ai-summary-body">' + D.aiSummary + '</div></div>';
 
-  <!-- AI Executive Summary -->
-  <div class="ai-summary">
-    <div class="ai-summary-header">
-      <span class="ai-badge">AI Analysis</span>
-      <h3>Executive Summary</h3>
-    </div>
-    <div class="ai-summary-body"><p>Round Rock Plumbing generated <strong>106 organic clicks</strong> from <strong>52.1K impressions</strong> this period, with an average position of <strong>19.1</strong> across Google Search. Click volume grew 16% month-over-month, reflecting the compounding impact of Stambaugh Designs' ongoing SEO strategy.</p><p>With <strong>200 total organic keywords</strong> and an estimated traffic value of <strong>$4.7K</strong>, Round is building meaningful organic visibility in its target market. <strong>85 new keywords</strong> entered rankings this period — a clear signal of expanding topical authority, with <strong>97 keywords moving up</strong> versus 18 declining.</p></div>
-  </div>
+  // KPI Cards
+  html += '<div class="kpi-grid">';
+  D.kpis.forEach(function(k) {
+    html += '<div class="kpi-card"><div class="kpi-label">' + k.label + '</div>' +
+      '<div class="kpi-value">' + k.value + '</div>' +
+      '<div class="kpi-trend ' + k.trendClass + '">' + k.trendText + '</div></div>';
+  });
+  html += '</div>';  // Section 01: Rybbit Analytics
+  if (D.rybbit && D.rybbit.available) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon orange">📈</div><div>' +
+      '<div class="section-number">Section 01</div><div class="section-title">Site Analytics (Rybbit)</div></div></div>';
+    html += '<div class="mini-kpi-row">';
+    D.rybbit.miniKpis.forEach(function(m) {
+      html += '<div class="mini-kpi"><div class="value">' + m.value + '</div><div class="label">' + m.label + '</div></div>';
+    });
+    html += '</div>';
+    if (D.rybbit.secondaryKpis && D.rybbit.secondaryKpis.length) {
+      html += '<div class="mini-kpi-row" style="grid-template-columns: repeat(' + D.rybbit.secondaryKpis.length + ', 1fr);">';
+      D.rybbit.secondaryKpis.forEach(function(m) {
+        var st = m.style ? ' style="' + m.style + '"' : '';
+        html += '<div class="mini-kpi"><div class="value"' + st + '>' + m.value + '</div><div class="label">' + m.label + '</div></div>';
+      });
+      html += '</div>';
+    }
+    if (D.rybbit.alert) {
+      html += '<div class="alert-box ' + D.rybbit.alert.type + '"><span class="alert-icon">⚠️</span><div>' + D.rybbit.alert.html + '</div></div>';
+    }
+    if (D.rybbit.referralSources && D.rybbit.referralSources.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Referral Sources</h4>';
+      html += '<table><thead><tr><th>#</th><th>Source</th><th>Sessions</th><th>Share</th><th>Bounce Rate</th></tr></thead><tbody>';
+      D.rybbit.referralSources.forEach(function(r) {
+        html += '<tr><td>' + rankBadge(r.rank) + '</td><td><strong>' + r.source + '</strong></td><td class="mono">' + r.sessions + '</td><td class="mono">' + r.share + '</td><td>' + bounceTag(r.bounceRate, r.bounceClass) + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }
+    html += '</div>';
+  }  // Section 02: Google Search Console
+  if (D.gsc && D.gsc.available) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon blue">🔍</div><div>' +
+      '<div class="section-number">Section 02</div><div class="section-title">Google Search Console</div></div></div>';
+    html += '<h4 style="font-size:14px;font-weight:700;margin-bottom:4px;">Daily Clicks &amp; Impressions</h4>' +
+      '<p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">' + D.gsc.dateRangeLabel + '</p>' +
+      '<div class="chart-container"><canvas id="dailyChart"></canvas></div>';
+    // Top Queries
+    if (D.gsc.topQueries && D.gsc.topQueries.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin:24px 0 12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Search Queries</h4>';
+      html += '<table><thead><tr><th>#</th><th>Query</th><th>Clicks</th><th>Impressions</th><th>CTR</th><th>Avg Pos</th></tr></thead><tbody>';
+      D.gsc.topQueries.forEach(function(q) {
+        html += '<tr><td>' + rankBadge(q.rank) + '</td><td><strong>' + q.query + '</strong></td><td class="mono">' + q.clicks + '</td><td class="mono">' + q.impressions + '</td><td class="mono">' + q.ctr + '</td><td class="mono">' + q.avgPos + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }
+    // Top Pages
+    if (D.gsc.topPages && D.gsc.topPages.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin:28px 0 12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Pages by Clicks</h4>';
+      html += '<table><thead><tr><th>Page</th><th>Clicks</th><th>Impressions</th><th>CTR</th><th>Avg Pos</th></tr></thead><tbody>';
+      D.gsc.topPages.forEach(function(p) {
+        var ctrSt = p.lowCtr ? ' style="color:var(--red);"' : '';
+        html += '<tr><td><strong>' + p.page + '</strong></td><td class="mono">' + p.clicks + '</td><td class="mono">' + p.impressions + '</td><td class="mono"' + ctrSt + '>' + p.ctr + '</td><td class="mono">' + p.avgPos + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }    // Device & Country
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px;"><div>' +
+      '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Device Split (GSC)</h4>' +
+      '<div class="chart-container" style="height:200px;"><canvas id="deviceChart"></canvas></div></div><div>' +
+      '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Countries (GSC)</h4>' +
+      '<table><thead><tr><th>Country</th><th>Clicks</th></tr></thead><tbody>';
+    D.gsc.countries.forEach(function(c) {
+      html += '<tr><td>' + c.flag + ' ' + c.name + '</td><td class="mono"><strong>' + c.clicks + '</strong></td></tr>';
+    });
+    html += '</tbody></table></div></div>';
+    html += '</div>';
+  }
 
-  <!-- Top KPIs -->
-  
-  <div class="kpi-grid">
-    <div class="kpi-card"><div class="kpi-label">Organic Clicks</div><div class="kpi-value">106</div><span class="kpi-trend up">▲ +16.5%</span></div>
-    <div class="kpi-card"><div class="kpi-label">Impressions</div><div class="kpi-value">52.1K</div><span class="kpi-trend up">▲ +38.0%</span></div>
-    <div class="kpi-card"><div class="kpi-label">Avg. CTR</div><div class="kpi-value">0.2%</div><span class="kpi-trend down">▼ -16.7%</span></div>
-    <div class="kpi-card"><div class="kpi-label">Avg. Position</div><div class="kpi-value">19.1</div><span class="kpi-trend up">▼ -20.1%</span></div>
-  </div>
+  // Section 03: Keyword Visibility
+  if (D.keywords && D.keywords.available) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon green">🌱</div><div>' +
+      '<div class="section-number">Section 03</div><div class="section-title">Organic Keyword Visibility</div></div></div>';
+    html += '<div class="mini-kpi-row">';
+    D.keywords.miniKpis.forEach(function(m) {
+      var st = m.style ? ' style="' + m.style + '"' : '';
+      html += '<div class="mini-kpi"><div class="value"' + st + '>' + m.value + '</div><div class="label">' + m.label + '</div></div>';
+    });
+    html += '</div>';
+    html += '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Keyword Position Distribution</h4>';
+    html += '<table><thead><tr><th>Position Range</th><th>Keywords</th><th>Distribution</th></tr></thead><tbody>';
+    D.keywords.distribution.forEach(function(d) {
+      var barSt = d.barColor ? 'background:' + d.barColor + ';' : '';
+      html += '<tr><td><span class="tag ' + d.tagClass + '">' + d.range + '</span></td><td class="mono"><strong>' + d.count + '</strong></td><td><div class="progress-bar" style="width:200px;"><div class="progress-fill" style="width:' + d.pct + '%;' + barSt + '"></div></div></td></tr>';
+    });
+    html += '</tbody></table>';    html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;">' +
+      '<div class="mini-kpi"><div class="value">' + D.keywords.etv + '<span style="font-size:14px;color:var(--text-secondary);">/mo</span></div><div class="label">Estimated Traffic Value</div></div>' +
+      '<div class="mini-kpi"><div class="value">' + D.keywords.estVisits + '</div><div class="label">Est. Organic Visits/Mo</div></div></div>';
+    html += '<div class="chart-container" style="height:220px;margin-top:16px;"><canvas id="keywordChart"></canvas></div>';
 
-  <!-- Analytics (Rybbit) -->
-  
+    // Top Keyword Rankings Table
+    if (D.keywords.topRankings && D.keywords.topRankings.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin:28px 0 12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Keyword Rankings</h4>';
+      html += '<div style="overflow-x:auto;"><table><thead><tr><th>#</th><th>Keyword</th><th>Pos</th><th>Change</th><th>Volume</th><th>ETV</th><th>CPC</th><th>KD</th><th>Ranking URL</th></tr></thead><tbody>';
+      D.keywords.topRankings.forEach(function(kw, i) {
+        var changeBadge = '';
+        if (kw.isNew) { changeBadge = '<span class="tag tag-blue" style="font-size:10px;">NEW</span>'; }
+        else if (kw.change > 0) { changeBadge = '<span class="tag tag-green">▲ ' + kw.change + '</span>'; }
+        else if (kw.change < 0) { changeBadge = '<span class="tag tag-red">▼ ' + Math.abs(kw.change) + '</span>'; }
+        else { changeBadge = '<span class="tag" style="background:var(--surface-alt);color:var(--text-secondary);">—</span>'; }
+        var posStyle = kw.position <= 3 ? 'color:var(--green);font-weight:700;' : (kw.position <= 10 ? 'color:var(--blue);font-weight:600;' : '');
+        var kdColor = kw.kd <= 15 ? 'var(--green)' : (kw.kd <= 40 ? 'var(--orange)' : 'var(--red)');
+        html += '<tr><td>' + (i + 1) + '</td><td><strong>' + kw.keyword + '</strong></td>';
+        html += '<td class="mono" style="' + posStyle + '">' + kw.position + '</td>';
+        html += '<td>' + changeBadge + '</td>';
+        html += '<td class="mono">' + kw.volume + '</td>';
+        html += '<td class="mono">' + kw.etv + '</td>';
+        html += '<td class="mono">$' + kw.cpc + '</td>';
+        html += '<td><span style="color:' + kdColor + ';font-weight:600;">' + kw.kd + '</span></td>';
+        html += '<td style="font-size:11px;color:var(--text-secondary);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + kw.url + '</td>';
+        html += '</tr>';
+      });
+      html += '</tbody></table></div>';
+    }
 
-  <!-- GSC Section -->
-  <div class="section">
-    <div class="section-header"><div class="section-icon blue">🔍</div><div><div class="section-number">Section 01</div><div class="section-title">Google Search Console</div></div></div>
-    <h4 style="font-size:13px;font-weight:700;margin-bottom:4px;">Daily Clicks &amp; Impressions</h4>
-    <p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">Feb 22 – Mar 24, 2026</p>
-    <div class="chart-container"><canvas id="dailyChart"></canvas></div><script>new Chart(document.getElementById("dailyChart").getContext("2d"),{type:"bar",data:{labels:["Feb 23", "Feb 24", "Feb 28", "Mar 01", "Mar 02", "Mar 03", "Mar 04", "Mar 08", "Mar 09", "Mar 10", "Mar 12", "Mar 14", "Mar 15", "Mar 19", "Mar 21", "Mar 22"],datasets:[{label:"Clicks",data:[3, 3, 3, 8, 6, 6, 3, 10, 6, 1, 4, 5, 7, 4, 3, 5],backgroundColor:"#c4550a",borderRadius:4,barPercentage:0.6,yAxisID:"y",order:2},{label:"Impressions",data:[1218, 3526, 1562, 1674, 1745, 1954, 2119, 1720, 1890, 2360, 2641, 1979, 1484, 1803, 1692, 1416],type:"line",borderColor:"#8c7e6e",backgroundColor:"rgba(140,126,110,0.1)",fill:true,tension:0.4,pointRadius:4,pointBackgroundColor:"#8c7e6e",borderWidth:2,yAxisID:"y1",order:1}]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:"index",intersect:false},plugins:{legend:{position:"top",align:"end",labels:{usePointStyle:true,pointStyle:"circle",padding:20,font:{size:11,weight:"600"}}}},scales:{y:{beginAtZero:true,position:"left",title:{display:true,text:"Clicks",font:{size:11,weight:"600"}},grid:{color:"rgba(0,0,0,0.04)"},ticks:{font:{size:11}}},y1:{beginAtZero:true,position:"right",title:{display:true,text:"Impressions",font:{size:11,weight:"600"}},grid:{display:false},ticks:{font:{size:11}}},x:{grid:{display:false},ticks:{font:{size:10}}}}}}); </script>
-    
-        <h4 style="font-size:13px;font-weight:700;margin:24px 0 12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Search Queries</h4>
-        <table>
-          <thead><tr><th>#</th><th>Query</th><th>Clicks</th><th>Impr</th><th>CTR%</th><th>Avg Pos</th></tr></thead>
-          <tbody><tr><td><span class="rank-badge rank-1">1</span></td><td><strong>best drain cleaner for pvc pipes</strong></td><td class="mono">9</td><td class="mono">816</td><td class="mono">1.1</td><td class="mono">8.2</td></tr><tr><td><span class="rank-badge rank-2">2</span></td><td><strong>plumbers near me</strong></td><td class="mono">3</td><td class="mono">552</td><td class="mono">0.5</td><td class="mono">22.1</td></tr><tr><td><span class="rank-badge rank-3">3</span></td><td><strong>plumbers round rock</strong></td><td class="mono">3</td><td class="mono">259</td><td class="mono">1.2</td><td class="mono">14.3</td></tr><tr><td><span class="rank-badge ">4</span></td><td><strong>round rock plumbing</strong></td><td class="mono">3</td><td class="mono">217</td><td class="mono">1.4</td><td class="mono">3.1</td></tr><tr><td><span class="rank-badge ">5</span></td><td><strong>best drain cleaner for plastic pipes</strong></td><td class="mono">2</td><td class="mono">76</td><td class="mono">2.6</td><td class="mono">6.4</td></tr><tr><td><span class="rank-badge ">6</span></td><td><strong>plumber near me</strong></td><td class="mono">2</td><td class="mono">1721</td><td class="mono">0.1</td><td class="mono">28.4</td></tr><tr><td><span class="rank-badge ">7</span></td><td><strong>plumber round rock</strong></td><td class="mono">2</td><td class="mono">354</td><td class="mono">0.6</td><td class="mono">12.2</td></tr><tr><td><span class="rank-badge ">8</span></td><td><strong>plumbing round rock</strong></td><td class="mono">2</td><td class="mono">204</td><td class="mono">1.0</td><td class="mono">11.8</td></tr></tbody>
-        </table>
-  </div>
+    html += '</div>';
+  }
 
-  <!-- Keyword Visibility -->
-  <div class="section">
-    <div class="section-header"><div class="section-icon green">🌱</div><div><div class="section-number">Section 02</div><div class="section-title">Organic Keyword Visibility</div></div></div>
-    <div class="mini-kpi-row">
-      <div class="mini-kpi"><div class="value">200</div><div class="label">Total Keywords</div></div>
-      <div class="mini-kpi"><div class="value" style="color:var(--green);">+85</div><div class="label">New Keywords</div></div>
-      <div class="mini-kpi"><div class="value" style="color:var(--green);">97 ▲</div><div class="label">Moving Up</div></div>
-      <div class="mini-kpi"><div class="value" style="color:var(--red);">18 ▼</div><div class="label">Moving Down</div></div>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
-      <div>
-        <h4 style="font-size:13px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Position Distribution</h4>
-        <table>
-          <thead><tr><th>Range</th><th>Keywords</th><th>Share</th></tr></thead>
-          <tbody><tr><td><span class="tag tag-green">Top 3</span></td><td class="mono"><strong>7</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:4%;background:#2d7a3a;"></div></div></td></tr><tr><td><span class="tag tag-blue">Pos 4–10</span></td><td class="mono"><strong>5</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:2%;background:#1a6bb5;"></div></div></td></tr><tr><td><span class="tag tag-blue">Pos 11–20</span></td><td class="mono"><strong>14</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:7%;background:#1a6bb5;"></div></div></td></tr><tr><td><span class="tag tag-orange">Pos 21+</span></td><td class="mono"><strong>174</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:87%;background:#b5680a;"></div></div></td></tr></tbody>
-        </table>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;">
-          <div class="mini-kpi"><div class="value">$4.7K</div><div class="label">Est. Traffic Value</div></div>
-          <div class="mini-kpi"><div class="value">239</div><div class="label">Domain Rank (MDR)</div></div>
-        </div>
-      </div>
-      <div>
-        <h4 style="font-size:13px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Keyword Distribution Chart</h4>
-        <div class="chart-container" style="height:220px;"><canvas id="kwChart"></canvas></div>
-        <script>new Chart(document.getElementById("kwChart").getContext("2d"),{type:"bar",data:{labels:["Top 3", "Pos 4-10", "Pos 11-20", "Pos 21+"],datasets:[{label:"Keywords",data:[7, 5, 14, 174],backgroundColor:["#2d7a3a","#1a6bb5","#b5680a","#c4390a"],borderRadius:6,barPercentage:0.65}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:"y",plugins:{legend:{display:false}},scales:{x:{beginAtZero:true,grid:{color:"rgba(0,0,0,0.04)"},ticks:{font:{size:11}}},y:{grid:{display:false},ticks:{font:{size:11,weight:"600"}}}}}});</script>
-      </div>
-    </div>
-  </div>
+  // Section 04: Insights & Recommendations
+  if (D.insights && D.insights.length) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon red">💡</div><div>' +
+      '<div class="section-number">Section 04</div><div class="section-title">Key Insights &amp; Recommendations</div></div></div>';
+    D.insights.forEach(function(ins) {
+      html += '<div class="insight ' + ins.type + '"><span class="insight-icon">' + ins.icon + '</span>' +
+        '<div class="insight-content"><h4>' + ins.title + '</h4><p>' + ins.text + '</p></div></div>';
+    });
+    html += '</div>';
+  }
 
-  <!-- Insights -->
-  <div class="section">
-    <div class="section-header"><div class="section-icon red">💡</div><div><div class="section-number">Section 03</div><div class="section-title">Key Insights &amp; Recommendations</div></div></div>
-    <div class="insight positive"><span class="insight-icon">✅</span><div class="insight-content"><h4>7 Keywords at Position #1 — Outstanding Performance</h4><p>Round Rock Plumbing holds 7 #1 rankings and a remarkable ETV of $4,704 — one of the strongest performers in the Stambaugh Designs portfolio. These top positions represent tens of thousands of dollars in equivalent paid traffic value.</p></div></div><div class="insight positive"><span class="insight-icon">✅</span><div class="insight-content"><h4>Clicks Up +16.5% & Impressions Up +38%</h4><p>106 organic clicks (+16.5%) alongside 52,075 impressions (+38%) this period. The massive impression growth signals Google is expanding the site's reach significantly.</p></div></div><div class="insight positive"><span class="insight-icon">✅</span><div class="insight-content"><h4>97 Keywords Moving Up in Rankings</h4><p>An exceptional 97 keywords improved in position this period versus only 18 declining. This heavily positive momentum reflects Stambaugh Designs' consistent optimization work paying off.</p></div></div><div class="insight warning"><span class="insight-icon">⚠️</span><div class="insight-content"><h4>'Plumber Near Me' Has 1,721 Impressions at Low CTR</h4><p>The highest-impression query shows a significant CTR opportunity. Optimizing the title tag and meta description for this term could yield 10-20 additional monthly clicks from existing rankings.</p></div></div>
-  </div>
+  // Footer
+  html += '<div class="report-footer"><div class="footer-brand">Stambaugh Designs</div>' +
+    '<p>Data sources: Google Search Console · DataForSEO · Rybbit Analytics</p>' +
+    '<p style="margin-top:8px;">Questions? Contact <a href="mailto:hello@stambaughdesigns.co">hello@stambaughdesigns.co</a> · <a href="https://stambaughdesigns.co">stambaughdesigns.co</a></p>' +
+    '</div></div>';
 
-  <!-- Footer -->
-  <div class="report-footer">
-    <div class="footer-brand">Stambaugh Designs</div>
-    <p>Data sources: Google Search Console · DataForSEO</p>
-    <p style="margin-top:8px;">Questions? Contact <a href="mailto:hello@stambaughdesigns.co">hello@stambaughdesigns.co</a> · <a href="https://stambaughdesigns.co">stambaughdesigns.co</a></p>
-  </div>
-</div>
+  document.getElementById('app').innerHTML = html;  // ═══ CHARTS ═══
+  var fontFamily = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
+  Chart.defaults.font.family = fontFamily;
+  Chart.defaults.color = '#8c7e6e';
 
+  // Daily Clicks & Impressions
+  if (D.gsc && D.gsc.available && D.gsc.dailyChart.labels.length) {
+    new Chart(document.getElementById('dailyChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: D.gsc.dailyChart.labels,
+        datasets: [
+          { label: 'Clicks', data: D.gsc.dailyChart.clicks, backgroundColor: '#c4550a', borderRadius: 4, barPercentage: 0.6, yAxisID: 'y', order: 2 },
+          { label: 'Impressions', data: D.gsc.dailyChart.impressions, type: 'line', borderColor: '#8c7e6e', backgroundColor: 'rgba(140,126,110,0.1)', fill: true, tension: 0.4, pointRadius: 4, pointBackgroundColor: '#8c7e6e', borderWidth: 2, yAxisID: 'y1', order: 1 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { position: 'top', align: 'end', labels: { usePointStyle: true, pointStyle: 'circle', padding: 20, font: { size: 11, weight: '600' } } } },
+        scales: {
+          y: { beginAtZero: true, position: 'left', title: { display: true, text: 'Clicks', font: { size: 11, weight: '600' } }, grid: { color: 'rgba(0,0,0,0.04)' }, ticks: { font: { size: 11 } } },
+          y1: { beginAtZero: true, position: 'right', title: { display: true, text: 'Impressions', font: { size: 11, weight: '600' } }, grid: { display: false }, ticks: { font: { size: 11 } } },
+          x: { grid: { display: false }, ticks: { font: { size: 10 } } }
+        }
+      }
+    });
+  }  // Device Doughnut
+  if (D.gsc && D.gsc.available && D.gsc.deviceChart) {
+    new Chart(document.getElementById('deviceChart').getContext('2d'), {
+      type: 'doughnut',
+      data: {
+        labels: D.gsc.deviceChart.labels,
+        datasets: [{ data: D.gsc.deviceChart.data, backgroundColor: ['#c4550a', '#8c7e6e', '#e8e0d8'], borderWidth: 0, cutout: '65%' }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom', labels: { usePointStyle: true, pointStyle: 'circle', padding: 12, font: { size: 11, weight: '500' } } } }
+      }
+    });
+  }
+
+  // Keyword Distribution
+  if (D.keywords && D.keywords.available && D.keywords.chartData) {
+    new Chart(document.getElementById('keywordChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['Top 3', 'Pos 4–10', 'Pos 11–20', 'Pos 21–50', 'Pos 51–100'],
+        datasets: [{ label: 'Keywords', data: D.keywords.chartData, backgroundColor: ['#2d7a3a', '#1a6bb5', '#1a6bb5', '#b5680a', '#c4390a'], borderRadius: 6, barPercentage: 0.65 }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.04)' }, ticks: { font: { size: 11 } } },
+          y: { grid: { display: false }, ticks: { font: { size: 11, weight: '600' } } }
+        }
+      }
+    });
+  }
+})();
+</script>
 </body>
 </html>
