@@ -3,44 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEO &amp; Analytics Report — Contractor Bear</title>
+<title id="pageTitle">SEO &amp; Analytics Report</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+// ══════════════════════════════════════════════════════════════
+//  REPORT DATA — This is the ONLY section that changes per
+//  client/month. The scheduled task replaces this block.
+// ══════════════════════════════════════════════════════════════
+const REPORT_DATA = {"client": {"domain": "contractorbear.com", "name": "Contractor Bear", "reportDateRange": "Mar 29 \u2013 Apr 27, 2026", "generatedDate": "April 28, 2026"}, "aiSummary": "<p><strong>Contractor Bear is moving from launch to traction.</strong> Search visibility has more than doubled month over month: <span class=\"highlight-stat\">17,916 GSC impressions (+152%)</span> and <span class=\"highlight-stat\">30 clicks (+173%)</span>, with average position improving from <span class=\"highlight-warn\">28.9 down to 19.4</span> \u2014 Stambaugh Designs' work is genuinely working its way up the SERPs.</p><p><strong>Geo-pages are the breakout story.</strong> The portfolio of city-targeted contractor pages is collecting impressions across exactly the right kinds of queries: \"hvac seo aurora co\" (#2.9, brought a click), \"seo for hvac companies baltimore\" (#5.8), \"seo for hvac contractors baltimore\" (#5.0), \"plumber lead generation\" variants, and \"garage door marketing\" cluster. Several of these are sitting in striking distance of page 1.</p><p><strong>Lead-generation pages are starting to surface.</strong> /hvac-lead-generation-las-vegas, /hvac-lead-generation-salt-lake-city, /plumber-lead-generation-denver, /electrician-marketing, and /painting-marketing-nashville are all earning impressions. The /plumber-lead-generation-memphis page is now ranking #11 for \"plumbing leads near me\" \u2014 one of the highest-CPC keywords in the niche at <span class=\"highlight-stat\">$51 CPC</span>.</p><p><strong>DataForSEO confirms the early wins.</strong> 31 brand-new keywords entered the index this period, with one already in positions 11\u201320 and four more in 31\u201340 \u2014 exactly the staircase pattern we want to see. Estimated traffic value is $17 today and growing.</p><p><strong>One thing to flag:</strong> Rybbit shows <span class=\"highlight-warn\">~96% of pageviews coming from a single IP range in Singapore</span> with 99.9% bounce rate \u2014 almost certainly bot/scraper traffic, not real users. Real US visitor traffic is 121 sessions in the period (77.7% bounce). We'll add bot filtering in the next site update so the dashboard reflects real engagement.</p><p>Desktop dominates GSC clicks (17 vs 13 mobile) \u2014 typical for a B2B contractor marketing audience. USA accounts for 25 of 30 clicks (83%), confirming the geo-targeting is reaching the right market.</p>", "kpis": [{"label": "Total Clicks (GSC)", "value": "30", "trendClass": "up", "trendText": "\u25b2 +173%"}, {"label": "Impressions (GSC)", "value": "17,916", "trendClass": "up", "trendText": "\u25b2 +152%"}, {"label": "Avg CTR (GSC)", "value": "0.17%", "trendClass": "up", "trendText": "\u25b2 +0.02pp"}, {"label": "Avg Position (GSC)", "value": "19.4", "trendClass": "up", "trendText": "\u25b2 -9.6"}], "rybbit": {"available": true, "miniKpis": [{"value": "4,844", "label": "Sessions"}, {"value": "4,970", "label": "Pageviews"}, {"value": "4,550", "label": "Unique Visitors"}, {"value": "1.03", "label": "Pages/Session"}], "secondaryKpis": [{"value": "3s", "label": "Avg Duration", "style": "color: var(--red);"}, {"value": "99.1%", "label": "Bounce Rate (All)", "style": "color: var(--red);"}, {"value": "77.7%", "label": "Bounce Rate (US)", "style": "color: var(--orange);"}], "alert": {"type": "warning", "html": "<strong>Bot traffic detected.</strong> 96% of Rybbit pageviews this period came from Singapore (4,653 of 4,844 sessions) with 99.98% bounce. Real US traffic is 121 sessions at 77.7% bounce. Bot-filtering will be added next month so analytics reflect actual users."}, "referralSources": [{"rank": 1, "source": "google.com", "sessions": "30", "share": "56.60%", "bounceRate": "63.3%", "bounceClass": "tag-red"}, {"rank": 2, "source": "chatgpt.com", "sessions": "6", "share": "11.32%", "bounceRate": "50.0%", "bounceClass": "tag-orange"}, {"rank": 3, "source": "operator.impactradius.net", "sessions": "5", "share": "9.43%", "bounceRate": "80.0%", "bounceClass": "tag-red"}, {"rank": 4, "source": "bing.com", "sessions": "4", "share": "7.55%", "bounceRate": "100.0%", "bounceClass": "tag-red"}, {"rank": 5, "source": "facebook.com", "sessions": "3", "share": "5.66%", "bounceRate": "33.3%", "bounceClass": "tag-orange"}, {"rank": 6, "source": "search.yahoo.com", "sessions": "2", "share": "3.77%", "bounceRate": "100.0%", "bounceClass": "tag-red"}, {"rank": 7, "source": "semrush.com", "sessions": "1", "share": "1.89%", "bounceRate": "100.0%", "bounceClass": "tag-red"}, {"rank": 8, "source": "copilot.microsoft.com", "sessions": "1", "share": "1.89%", "bounceRate": "0.0%", "bounceClass": "tag-green"}]}, "gsc": {"available": true, "dailyChart": {"labels": ["Mar 29", "Mar 30", "Mar 31", "Apr 1", "Apr 2", "Apr 3", "Apr 4", "Apr 5", "Apr 6", "Apr 7", "Apr 8", "Apr 9", "Apr 10", "Apr 11", "Apr 12", "Apr 13", "Apr 14", "Apr 15", "Apr 16", "Apr 17", "Apr 18", "Apr 19", "Apr 20", "Apr 21", "Apr 22", "Apr 23", "Apr 24", "Apr 25", "Apr 26"], "clicks": [1, 0, 2, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, 1, 0, 0, 1, 0, 1, 0, 1, 3, 4, 1, 3, 0, 1, 2], "impressions": [503, 674, 612, 821, 516, 516, 546, 476, 557, 616, 530, 536, 547, 494, 531, 547, 644, 700, 696, 606, 696, 611, 730, 624, 724, 694, 741, 659, 769]}, "dateRangeLabel": "Mar 29 \u2013 Apr 27, 2026", "topQueries": [{"rank": 1, "query": "hvac seo aurora co", "clicks": "1", "impressions": "32", "ctr": "3.13%", "avgPos": "2.91"}, {"rank": 2, "query": "landscaping marketing agency", "clicks": "1", "impressions": "2", "ctr": "50.0%", "avgPos": "14.5"}, {"rank": 3, "query": "garage door marketers", "clicks": "0", "impressions": "329", "ctr": "0.0%", "avgPos": "43.78"}, {"rank": 4, "query": "\"bend hvac companies\" bend oregon", "clicks": "0", "impressions": "139", "ctr": "0.0%", "avgPos": "4.09"}, {"rank": 5, "query": "garage door marketing", "clicks": "0", "impressions": "133", "ctr": "0.0%", "avgPos": "46.78"}, {"rank": 6, "query": "seo for hvac companies baltimore", "clicks": "0", "impressions": "124", "ctr": "0.0%", "avgPos": "5.85"}, {"rank": 7, "query": "garage door marketing ideas", "clicks": "0", "impressions": "116", "ctr": "0.0%", "avgPos": "74.62"}, {"rank": 8, "query": "garage door marketing agency", "clicks": "0", "impressions": "113", "ctr": "0.0%", "avgPos": "51.54"}, {"rank": 9, "query": "marketing hvac company", "clicks": "0", "impressions": "108", "ctr": "0.0%", "avgPos": "78.72"}, {"rank": 10, "query": "seo for hvac contractors baltimore", "clicks": "0", "impressions": "108", "ctr": "0.0%", "avgPos": "5.02"}], "topPages": [{"page": "/", "clicks": "5", "impressions": "99", "ctr": "5.05%", "avgPos": "5.07", "lowCtr": false}, {"page": "/hvac-lead-generation-las-vegas", "clicks": "3", "impressions": "54", "ctr": "5.56%", "avgPos": "4.80", "lowCtr": false}, {"page": "/electrician-marketing", "clicks": "2", "impressions": "94", "ctr": "2.13%", "avgPos": "17.86", "lowCtr": true}, {"page": "/roofing-marketing-fremont", "clicks": "2", "impressions": "8", "ctr": "25.0%", "avgPos": "35.13", "lowCtr": false}, {"page": "/painting-marketing-nashville", "clicks": "1", "impressions": "313", "ctr": "0.32%", "avgPos": "43.93", "lowCtr": true}, {"page": "/plumber-lead-generation-denver", "clicks": "1", "impressions": "144", "ctr": "0.69%", "avgPos": "56.09", "lowCtr": true}, {"page": "/blog/hvac-marketing-calendar", "clicks": "1", "impressions": "65", "ctr": "1.54%", "avgPos": "3.95", "lowCtr": true}, {"page": "/hvac-seo-aurora-co", "clicks": "1", "impressions": "63", "ctr": "1.59%", "avgPos": "6.02", "lowCtr": true}, {"page": "/plumber-seo-abilene", "clicks": "1", "impressions": "46", "ctr": "2.17%", "avgPos": "11.24", "lowCtr": true}, {"page": "/hvac-lead-generation-salt-lake-city", "clicks": "1", "impressions": "40", "ctr": "2.50%", "avgPos": "5.43", "lowCtr": true}], "deviceChart": {"labels": ["Desktop", "Mobile", "Tablet"], "data": [17, 13, 0]}, "countries": [{"flag": "\ud83c\uddfa\ud83c\uddf8", "name": "United States", "clicks": "25"}, {"flag": "\ud83c\uddf5\ud83c\udded", "name": "Philippines", "clicks": "1"}, {"flag": "\ud83c\uddf3\ud83c\uddf4", "name": "Norway", "clicks": "1"}, {"flag": "\ud83c\uddee\ud83c\uddf3", "name": "India", "clicks": "1"}, {"flag": "\ud83c\uddea\ud83c\uddf8", "name": "Spain", "clicks": "1"}]}, "keywords": {"available": true, "miniKpis": [{"value": "31", "label": "Total Keywords"}, {"value": "+31", "label": "New Keywords", "style": "color: var(--green);"}, {"value": "0 \u25b2", "label": "Moving Up", "style": ""}, {"value": "0 \u25bc", "label": "Moving Down", "style": ""}], "distribution": [{"range": "Top 3", "tagClass": "tag-green", "count": "0", "pct": 0, "barColor": "var(--green)"}, {"range": "Pos 4 \u2013 10", "tagClass": "tag-blue", "count": "0", "pct": 0, "barColor": ""}, {"range": "Pos 11 \u2013 20", "tagClass": "tag-blue", "count": "1", "pct": 3, "barColor": ""}, {"range": "Pos 21 \u2013 50", "tagClass": "tag-orange", "count": "9", "pct": 29, "barColor": "var(--orange)"}, {"range": "Pos 51 \u2013 100", "tagClass": "tag-red", "count": "21", "pct": 68, "barColor": "var(--red)"}], "etv": "$17", "estVisits": "~10", "chartData": [0, 0, 1, 9, 21], "topRankings": [{"keyword": "plumber marketing", "position": 54, "volume": "880", "cpc": "55.69", "kd": 20, "etv": "1.7", "url": "/plumber-marketing-milwaukee", "isNew": true, "change": 0}, {"keyword": "plumbers marketing", "position": 49, "volume": "880", "cpc": "54.21", "kd": 29, "etv": "1.7", "url": "/plumber-marketing-milwaukee", "isNew": true, "change": 0}, {"keyword": "plumbers advertising", "position": 50, "volume": "720", "cpc": "63.04", "kd": 13, "etv": "1.4", "url": "/plumber-marketing-milwaukee", "isNew": true, "change": 0}, {"keyword": "plumbers in waterbury", "position": 66, "volume": "590", "cpc": "17.05", "kd": 0, "etv": "1.2", "url": "/plumber-seo-waterbury", "isNew": true, "change": 0}, {"keyword": "plumbing lead generation", "position": 80, "volume": "590", "cpc": "58.53", "kd": 0, "etv": "1.2", "url": "/plumber-lead-generation-denver", "isNew": true, "change": 0}, {"keyword": "plumbing leads", "position": 81, "volume": "590", "cpc": "58.53", "kd": 0, "etv": "1.2", "url": "/plumber-lead-generation-baltimore", "isNew": true, "change": 0}, {"keyword": "leads plumber", "position": 72, "volume": "390", "cpc": "0.00", "kd": 0, "etv": "0.8", "url": "/plumber-lead-generation-denver", "isNew": true, "change": 0}, {"keyword": "plumber seo company", "position": 84, "volume": "390", "cpc": "48.26", "kd": 20, "etv": "0.8", "url": "/plumber-seo-san-diego", "isNew": true, "change": 0}, {"keyword": "bear contracting", "position": 61, "volume": "320", "cpc": "0.00", "kd": 0, "etv": "0.7", "url": "/", "isNew": true, "change": 0}, {"keyword": "plumber lead", "position": 41, "volume": "320", "cpc": "25.71", "kd": 0, "etv": "0.7", "url": "/plumber-lead-generation-arlington-tx", "isNew": true, "change": 0}, {"keyword": "hvac marketing services", "position": 81, "volume": "260", "cpc": "35.45", "kd": 21, "etv": "0.5", "url": "/hvac-marketing-baton-rouge", "isNew": true, "change": 0}, {"keyword": "paint contractor marketing", "position": 56, "volume": "260", "cpc": "6.14", "kd": 0, "etv": "0.5", "url": "/painting-marketing-san-diego", "isNew": true, "change": 0}, {"keyword": "painting contractor marketing", "position": 67, "volume": "260", "cpc": "6.14", "kd": 3, "etv": "0.5", "url": "/painting-marketing-san-diego", "isNew": true, "change": 0}, {"keyword": "garage door marketing", "position": 53, "volume": "210", "cpc": "20.48", "kd": 0, "etv": "0.4", "url": "/garage-door-marketing", "isNew": true, "change": 0}, {"keyword": "marketing plumbing", "position": 42, "volume": "210", "cpc": "54.24", "kd": 21, "etv": "0.4", "url": "/plumber-marketing-milwaukee", "isNew": true, "change": 0}, {"keyword": "painting company seo", "position": 90, "volume": "210", "cpc": "0.00", "kd": 0, "etv": "0.4", "url": "/painting-seo-indianapolis", "isNew": true, "change": 0}, {"keyword": "plumbing contractor marketing", "position": 61, "volume": "140", "cpc": "0.00", "kd": 14, "etv": "0.3", "url": "/plumber-marketing/north-carolina", "isNew": true, "change": 0}, {"keyword": "bear contractor", "position": 31, "volume": "110", "cpc": "0.00", "kd": 0, "etv": "0.2", "url": "/home/", "isNew": true, "change": 0}, {"keyword": "bear contractors", "position": 35, "volume": "110", "cpc": "2.93", "kd": 0, "etv": "0.2", "url": "/trades-we-serve/", "isNew": true, "change": 0}, {"keyword": "electrical contractor advertising", "position": 59, "volume": "110", "cpc": "0.00", "kd": 0, "etv": "0.2", "url": "/electrician-marketing-virginia-beach", "isNew": true, "change": 0}]}, "insights": [{"type": "positive", "icon": "\u2b50", "title": "Search visibility more than doubled", "text": "GSC impressions jumped from 7,117 to 17,916 (+152%) and clicks moved from 11 to 30 (+173%). Average position improved from 28.9 to 19.4 \u2014 fundamental traction across the keyword footprint."}, {"type": "positive", "icon": "\u2b50", "title": "Geo-pages are catching impressions in striking distance", "text": "Several city-targeted pages already average position 4-6: 'bend hvac companies' (#4.1), 'seo for hvac companies baltimore' (#5.8), 'seo for hvac contractors baltimore' (#5.0). Title/meta refinements would convert these impressions to clicks."}, {"type": "warning", "icon": "\ud83d\udea8", "title": "Bot traffic dominating Rybbit data", "text": "4,653 of 4,844 sessions (96%) are from a single Singapore source with 99.98% bounce \u2014 automated/scraper traffic. Real US visitors total 121 sessions. Recommend adding a bot filter so the analytics dashboard reflects actual users next month."}, {"type": "positive", "icon": "\u2b50", "title": "Plumbing-leads cluster has high commercial value", "text": "DataForSEO ranked 31 brand-new keywords this period, with the plumbing-marketing/leads cluster (CPCs of $48\u2013$63) representing the highest-value commercial intent. Even 10 spots of position improvement on these will drive meaningful lead volume."}]};
+</script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
   :root {
     --bg: #f5f0eb; --surface: #ffffff; --surface-alt: #faf7f4;
     --border: #e8e0d8; --text: #2c2417; --text-secondary: #8c7e6e; --text-muted: #b0a494;
     --accent: #c4550a; --accent-light: #e8764a;
-    --green: #2d7a3a; --green-bg: #eaf5ec;
-    --red: #c4390a; --red-bg: #fdf0eb;
-    --orange: #b5680a; --orange-bg: #fef6eb;
-    --blue: #1a6bb5; --blue-bg: #ebf3fa;
+    --green: #2d7a3a; --green-bg: #eaf5ec; --red: #c4390a; --red-bg: #fdf0eb;
+    --orange: #b5680a; --orange-bg: #fef6eb; --blue: #1a6bb5; --blue-bg: #ebf3fa;
     --header-gradient: linear-gradient(135deg, #2c1810 0%, #4a2c1a 40%, #3d2010 100%);
     --radius: 12px; --radius-sm: 8px;
     --shadow: 0 1px 3px rgba(44,36,23,0.06), 0 1px 2px rgba(44,36,23,0.04);
     --shadow-md: 0 4px 12px rgba(44,36,23,0.08), 0 2px 4px rgba(44,36,23,0.04);
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
   .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
   .report-header { background: var(--header-gradient); padding: 48px 0 44px; position: relative; overflow: hidden; }
   .report-header::before { content: ''; position: absolute; top: -50%; right: -20%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(196,85,10,0.15) 0%, transparent 70%); pointer-events: none; }
   .report-header .container { position: relative; z-index: 1; }
-  .hdr-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 6px 16px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #f0e6d8; margin-bottom: 20px; }
-  .hdr-badge::before { content: ''; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
+  .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 6px 16px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #f0e6d8; margin-bottom: 20px; }
+  .badge::before { content: ''; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
   .header-domain { font-size: 40px; font-weight: 800; color: #ffffff; letter-spacing: -1px; margin-bottom: 6px; }
   .header-subtitle { font-size: 16px; color: #c4b8a8; margin-bottom: 24px; }
   .header-meta { display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; color: #a89880; }
   .header-meta span { display: flex; align-items: center; gap: 6px; }
-  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 0 0 32px; position: relative; z-index: 2; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: -28px 0 32px; position: relative; z-index: 2; }
   .kpi-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow-md); }
   .kpi-label { font-size: 11px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px; }
   .kpi-value { font-size: 36px; font-weight: 800; color: var(--text); line-height: 1.1; letter-spacing: -1px; }
+  .kpi-value.alert { color: var(--red); }
   .kpi-trend { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; margin-top: 8px; padding: 2px 8px; border-radius: 4px; }
   .kpi-trend.up { background: var(--green-bg); color: var(--green); }
   .kpi-trend.down { background: var(--red-bg); color: var(--red); }
-  .kpi-trend.neutral { background: var(--surface-alt); color: var(--text-secondary); }
-  .section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 24px; box-shadow: var(--shadow); }
+  .kpi-trend.neutral { background: var(--surface-alt); color: var(--text-secondary); }  .section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 24px; box-shadow: var(--shadow); }
   .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
   .section-icon { width: 40px; height: 40px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
   .section-icon.orange { background: var(--orange-bg); }
@@ -49,8 +53,14 @@
   .section-icon.red { background: var(--red-bg); }
   .section-number { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); }
   .section-title { font-size: 20px; font-weight: 700; color: var(--text); }
+  .mini-kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+  .mini-kpi { background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px; text-align: center; }
+  .mini-kpi .value { font-size: 22px; font-weight: 800; color: var(--text); }
+  .mini-kpi .label { font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-secondary); margin-top: 4px; }
   table { width: 100%; border-collapse: collapse; }
   thead th { font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-secondary); padding: 12px 16px; text-align: left; border-bottom: 2px solid var(--border); background: var(--surface-alt); }
+  thead th:first-child { border-radius: var(--radius-sm) 0 0 0; }
+  thead th:last-child { border-radius: 0 var(--radius-sm) 0 0; }
   tbody td { padding: 12px 16px; font-size: 13px; border-bottom: 1px solid var(--border); }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr:hover { background: var(--surface-alt); }
@@ -58,9 +68,8 @@
   .rank-badge { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; font-size: 12px; font-weight: 700; }
   .rank-1 { background: #fef3c7; color: #92400e; }
   .rank-2 { background: #e5e7eb; color: #374151; }
-  .rank-3 { background: #fde9d6; color: #9a3412; }
-  .progress-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; margin-top: 4px; }
-  .progress-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-light)); }
+  .rank-3 { background: #fde9d6; color: #9a3412; }  .progress-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; margin-top: 4px; }
+  .progress-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-light)); transition: width 1s ease; }
   .tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 4px; letter-spacing: 0.3px; }
   .tag-green { background: var(--green-bg); color: var(--green); }
   .tag-blue { background: var(--blue-bg); color: var(--blue); }
@@ -75,20 +84,24 @@
   .insight-content h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
   .insight-content p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
   .chart-container { position: relative; height: 280px; margin: 16px 0; }
-  .mini-kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
-  .mini-kpi { background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px; text-align: center; }
-  .mini-kpi .value { font-size: 22px; font-weight: 800; color: var(--text); }
-  .mini-kpi .label { font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-secondary); margin-top: 4px; }
-  .no-data { background: var(--surface-alt); border: 1px dashed var(--border); border-radius: var(--radius-sm); padding: 20px; text-align: center; color: var(--text-muted); font-size: 13px; }
+  .alert-box { display: flex; gap: 12px; align-items: flex-start; background: var(--red-bg); border: 1px solid rgba(196,57,10,0.2); border-radius: var(--radius-sm); padding: 16px; margin-bottom: 20px; font-size: 13px; }
+  .alert-box.warning { background: var(--orange-bg); border-color: rgba(181,104,10,0.2); }
+  .alert-icon { font-size: 18px; flex-shrink: 0; }
   .report-footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-size: 12px; }
   .report-footer a { color: var(--accent); text-decoration: none; }
-  .footer-brand { font-size: 14px; font-weight: 700; color: var(--text-secondary); margin-bottom: 8px; }
-  .ai-summary { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 32px; margin-bottom: 24px; box-shadow: var(--shadow-md); }
+  .report-footer a:hover { text-decoration: underline; }
+  .footer-brand { font-size: 14px; font-weight: 700; color: var(--text-secondary); margin-bottom: 8px; }  .ai-summary { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 32px; margin: -28px 0 24px; position: relative; z-index: 2; box-shadow: var(--shadow-md); }
   .ai-summary-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-  .ai-badge { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1a1a2e, #2c1810); color: #f0e6d8; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 12px; border-radius: 6px; }
-  .ai-badge::before { content: ''; width: 6px; height: 6px; background: #63b3ed; border-radius: 50%; }
+  .ai-summary-header .ai-badge { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1a1a2e, #2c1810); color: #f0e6d8; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 12px; border-radius: 6px; }
+  .ai-summary-header .ai-badge::before { content: ''; width: 6px; height: 6px; background: #63b3ed; border-radius: 50%; animation: pulse-dot 2s infinite; }
+  @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   .ai-summary-header h3 { font-size: 16px; font-weight: 700; color: var(--text); }
   .ai-summary-body { font-size: 14px; line-height: 1.75; color: var(--text); }
+  .ai-summary-body p { margin-bottom: 12px; }
+  .ai-summary-body p:last-child { margin-bottom: 0; }
+  .ai-summary-body strong { color: var(--text); }
+  .ai-summary-body .highlight-stat { display: inline-block; background: var(--green-bg); color: var(--green); font-weight: 700; padding: 1px 8px; border-radius: 4px; font-size: 13px; }
+  .ai-summary-body .highlight-warn { display: inline-block; background: var(--orange-bg); color: var(--orange); font-weight: 700; padding: 1px 8px; border-radius: 4px; font-size: 13px; }
   @media (max-width: 768px) {
     .kpi-grid { grid-template-columns: repeat(2, 1fr); }
     .mini-kpi-row { grid-template-columns: repeat(2, 1fr); }
@@ -98,93 +111,233 @@
 </style>
 </head>
 <body>
+<div id="app"></div>
+<script>
+(function() {
+  const D = REPORT_DATA;
+  document.getElementById('pageTitle').textContent = 'SEO & Analytics Report — ' + D.client.name;  function rankBadge(rank) {
+    if (rank <= 3) return '<span class="rank-badge rank-' + rank + '">' + rank + '</span>';
+    return rank;
+  }
+  function bounceTag(rate, cls) { return '<span class="tag ' + cls + '">' + rate + '</span>'; }
 
-<div class="report-header">
-  <div class="container">
-    <div class="hdr-badge">SEO &amp; Analytics Report</div>
-    <div class="header-domain">contactorbear.com</div>
-    <div class="header-subtitle">Contractor Bear — Comprehensive Performance Analysis</div>
-    <div class="header-meta">
-      <span>📅 Feb 22 – Mar 24, 2026</span>
-      <span>📊 Data Sources: GSC · DataForSEO</span>
-      <span>🖨 Generated: March 24, 2026</span>
-    </div>
-  </div>
-</div>
+  // Header
+  var html = '<div class="report-header"><div class="container">' +
+    '<div class="badge">SEO &amp; Analytics Report</div>' +
+    '<div class="header-domain">' + D.client.domain + '</div>' +
+    '<div class="header-subtitle">' + D.client.name + ' — Comprehensive Performance Analysis</div>' +
+    '<div class="header-meta">' +
+    '<span>📅 ' + D.client.reportDateRange + '</span>' +
+    '<span>📊 Data Sources: GSC · DataForSEO · Rybbit</span>' +
+    '<span>🖨 Generated: ' + D.client.generatedDate + '</span>' +
+    '</div></div></div><div class="container">';
 
-<div class="container">
-  <div style="height:28px;"></div>
+  // AI Executive Summary
+  html += '<div class="ai-summary"><div class="ai-summary-header">' +
+    '<span class="ai-badge">AI Analysis</span><h3>Executive Summary</h3></div>' +
+    '<div class="ai-summary-body">' + D.aiSummary + '</div></div>';
 
-  <!-- AI Executive Summary -->
-  <div class="ai-summary">
-    <div class="ai-summary-header">
-      <span class="ai-badge">AI Analysis</span>
-      <h3>Executive Summary</h3>
-    </div>
-    <div class="ai-summary-body"><p>This report highlights the foundational SEO work Stambaugh Designs is executing for <strong>Contractor Bear</strong>. With <strong>0 organic keywords</strong> currently tracking and an estimated traffic value of <strong>$0</strong>, the site is progressing on schedule through Google's trust and indexation cycle.</p><p><strong>0 new keywords</strong> entered rankings this period, indicating active crawler engagement and content indexation. Stambaugh Designs continues to build the technical foundation, content quality, and local authority signals needed to drive consistent organic lead flow in the months ahead.</p></div>
-  </div>
+  // KPI Cards
+  html += '<div class="kpi-grid">';
+  D.kpis.forEach(function(k) {
+    html += '<div class="kpi-card"><div class="kpi-label">' + k.label + '</div>' +
+      '<div class="kpi-value">' + k.value + '</div>' +
+      '<div class="kpi-trend ' + k.trendClass + '">' + k.trendText + '</div></div>';
+  });
+  html += '</div>';  // Section 01: Rybbit Analytics
+  if (D.rybbit && D.rybbit.available) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon orange">📈</div><div>' +
+      '<div class="section-number">Section 01</div><div class="section-title">Site Analytics (Rybbit)</div></div></div>';
+    html += '<div class="mini-kpi-row">';
+    D.rybbit.miniKpis.forEach(function(m) {
+      html += '<div class="mini-kpi"><div class="value">' + m.value + '</div><div class="label">' + m.label + '</div></div>';
+    });
+    html += '</div>';
+    if (D.rybbit.secondaryKpis && D.rybbit.secondaryKpis.length) {
+      html += '<div class="mini-kpi-row" style="grid-template-columns: repeat(' + D.rybbit.secondaryKpis.length + ', 1fr);">';
+      D.rybbit.secondaryKpis.forEach(function(m) {
+        var st = m.style ? ' style="' + m.style + '"' : '';
+        html += '<div class="mini-kpi"><div class="value"' + st + '>' + m.value + '</div><div class="label">' + m.label + '</div></div>';
+      });
+      html += '</div>';
+    }
+    if (D.rybbit.alert) {
+      html += '<div class="alert-box ' + D.rybbit.alert.type + '"><span class="alert-icon">⚠️</span><div>' + D.rybbit.alert.html + '</div></div>';
+    }
+    if (D.rybbit.referralSources && D.rybbit.referralSources.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Referral Sources</h4>';
+      html += '<table><thead><tr><th>#</th><th>Source</th><th>Sessions</th><th>Share</th><th>Bounce Rate</th></tr></thead><tbody>';
+      D.rybbit.referralSources.forEach(function(r) {
+        html += '<tr><td>' + rankBadge(r.rank) + '</td><td><strong>' + r.source + '</strong></td><td class="mono">' + r.sessions + '</td><td class="mono">' + r.share + '</td><td>' + bounceTag(r.bounceRate, r.bounceClass) + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }
+    html += '</div>';
+  }  // Section 02: Google Search Console
+  if (D.gsc && D.gsc.available) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon blue">🔍</div><div>' +
+      '<div class="section-number">Section 02</div><div class="section-title">Google Search Console</div></div></div>';
+    html += '<h4 style="font-size:14px;font-weight:700;margin-bottom:4px;">Daily Clicks &amp; Impressions</h4>' +
+      '<p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">' + D.gsc.dateRangeLabel + '</p>' +
+      '<div class="chart-container"><canvas id="dailyChart"></canvas></div>';
+    // Top Queries
+    if (D.gsc.topQueries && D.gsc.topQueries.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin:24px 0 12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Search Queries</h4>';
+      html += '<table><thead><tr><th>#</th><th>Query</th><th>Clicks</th><th>Impressions</th><th>CTR</th><th>Avg Pos</th></tr></thead><tbody>';
+      D.gsc.topQueries.forEach(function(q) {
+        html += '<tr><td>' + rankBadge(q.rank) + '</td><td><strong>' + q.query + '</strong></td><td class="mono">' + q.clicks + '</td><td class="mono">' + q.impressions + '</td><td class="mono">' + q.ctr + '</td><td class="mono">' + q.avgPos + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }
+    // Top Pages
+    if (D.gsc.topPages && D.gsc.topPages.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin:28px 0 12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Pages by Clicks</h4>';
+      html += '<table><thead><tr><th>Page</th><th>Clicks</th><th>Impressions</th><th>CTR</th><th>Avg Pos</th></tr></thead><tbody>';
+      D.gsc.topPages.forEach(function(p) {
+        var ctrSt = p.lowCtr ? ' style="color:var(--red);"' : '';
+        html += '<tr><td><strong>' + p.page + '</strong></td><td class="mono">' + p.clicks + '</td><td class="mono">' + p.impressions + '</td><td class="mono"' + ctrSt + '>' + p.ctr + '</td><td class="mono">' + p.avgPos + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }    // Device & Country
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px;"><div>' +
+      '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Device Split (GSC)</h4>' +
+      '<div class="chart-container" style="height:200px;"><canvas id="deviceChart"></canvas></div></div><div>' +
+      '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Countries (GSC)</h4>' +
+      '<table><thead><tr><th>Country</th><th>Clicks</th></tr></thead><tbody>';
+    D.gsc.countries.forEach(function(c) {
+      html += '<tr><td>' + c.flag + ' ' + c.name + '</td><td class="mono"><strong>' + c.clicks + '</strong></td></tr>';
+    });
+    html += '</tbody></table></div></div>';
+    html += '</div>';
+  }
 
-  <!-- Top KPIs -->
-  
-  <div class="kpi-grid" style="grid-template-columns:repeat(2,1fr);">
-    <div class="kpi-card"><div class="kpi-label">Organic Keywords</div><div class="kpi-value">0</div><span class="kpi-trend neutral">+0 new this period</span></div>
-    <div class="kpi-card"><div class="kpi-label">Est. Traffic Value</div><div class="kpi-value">$0</div><span class="kpi-trend neutral">— DataForSEO</span></div>
-  </div>
+  // Section 03: Keyword Visibility
+  if (D.keywords && D.keywords.available) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon green">🌱</div><div>' +
+      '<div class="section-number">Section 03</div><div class="section-title">Organic Keyword Visibility</div></div></div>';
+    html += '<div class="mini-kpi-row">';
+    D.keywords.miniKpis.forEach(function(m) {
+      var st = m.style ? ' style="' + m.style + '"' : '';
+      html += '<div class="mini-kpi"><div class="value"' + st + '>' + m.value + '</div><div class="label">' + m.label + '</div></div>';
+    });
+    html += '</div>';
+    html += '<h4 style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Keyword Position Distribution</h4>';
+    html += '<table><thead><tr><th>Position Range</th><th>Keywords</th><th>Distribution</th></tr></thead><tbody>';
+    D.keywords.distribution.forEach(function(d) {
+      var barSt = d.barColor ? 'background:' + d.barColor + ';' : '';
+      html += '<tr><td><span class="tag ' + d.tagClass + '">' + d.range + '</span></td><td class="mono"><strong>' + d.count + '</strong></td><td><div class="progress-bar" style="width:200px;"><div class="progress-fill" style="width:' + d.pct + '%;' + barSt + '"></div></div></td></tr>';
+    });
+    html += '</tbody></table>';    html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;">' +
+      '<div class="mini-kpi"><div class="value">' + D.keywords.etv + '<span style="font-size:14px;color:var(--text-secondary);">/mo</span></div><div class="label">Estimated Traffic Value</div></div>' +
+      '<div class="mini-kpi"><div class="value">' + D.keywords.estVisits + '</div><div class="label">Est. Organic Visits/Mo</div></div></div>';
+    html += '<div class="chart-container" style="height:220px;margin-top:16px;"><canvas id="keywordChart"></canvas></div>';
 
-  <!-- Analytics (Rybbit) -->
-  
+    // Top Keyword Rankings Table
+    if (D.keywords.topRankings && D.keywords.topRankings.length) {
+      html += '<h4 style="font-size:14px;font-weight:700;margin:28px 0 12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Top Keyword Rankings</h4>';
+      html += '<div style="overflow-x:auto;"><table><thead><tr><th>#</th><th>Keyword</th><th>Pos</th><th>Change</th><th>Volume</th><th>ETV</th><th>CPC</th><th>KD</th><th>Ranking URL</th></tr></thead><tbody>';
+      D.keywords.topRankings.forEach(function(kw, i) {
+        var changeBadge = '';
+        if (kw.isNew) { changeBadge = '<span class="tag tag-blue" style="font-size:10px;">NEW</span>'; }
+        else if (kw.change > 0) { changeBadge = '<span class="tag tag-green">▲ ' + kw.change + '</span>'; }
+        else if (kw.change < 0) { changeBadge = '<span class="tag tag-red">▼ ' + Math.abs(kw.change) + '</span>'; }
+        else { changeBadge = '<span class="tag" style="background:var(--surface-alt);color:var(--text-secondary);">—</span>'; }
+        var posStyle = kw.position <= 3 ? 'color:var(--green);font-weight:700;' : (kw.position <= 10 ? 'color:var(--blue);font-weight:600;' : '');
+        var kdColor = kw.kd <= 15 ? 'var(--green)' : (kw.kd <= 40 ? 'var(--orange)' : 'var(--red)');
+        html += '<tr><td>' + (i + 1) + '</td><td><strong>' + kw.keyword + '</strong></td>';
+        html += '<td class="mono" style="' + posStyle + '">' + kw.position + '</td>';
+        html += '<td>' + changeBadge + '</td>';
+        html += '<td class="mono">' + kw.volume + '</td>';
+        html += '<td class="mono">' + kw.etv + '</td>';
+        html += '<td class="mono">$' + kw.cpc + '</td>';
+        html += '<td><span style="color:' + kdColor + ';font-weight:600;">' + kw.kd + '</span></td>';
+        html += '<td style="font-size:11px;color:var(--text-secondary);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + kw.url + '</td>';
+        html += '</tr>';
+      });
+      html += '</tbody></table></div>';
+    }
 
-  <!-- GSC Section -->
-  <div class="section">
-    <div class="section-header"><div class="section-icon blue">🔍</div><div><div class="section-number">Section 01</div><div class="section-title">Google Search Console</div></div></div>
-    <h4 style="font-size:13px;font-weight:700;margin-bottom:4px;">Daily Clicks &amp; Impressions</h4>
-    <p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">Feb 22 – Mar 24, 2026</p>
-    <div class="no-data">Google Search Console data not yet available for this domain.</div>
-    <div class="no-data" style="margin-top:16px;">No query data available for this period.</div>
-  </div>
+    html += '</div>';
+  }
 
-  <!-- Keyword Visibility -->
-  <div class="section">
-    <div class="section-header"><div class="section-icon green">🌱</div><div><div class="section-number">Section 02</div><div class="section-title">Organic Keyword Visibility</div></div></div>
-    <div class="mini-kpi-row">
-      <div class="mini-kpi"><div class="value">0</div><div class="label">Total Keywords</div></div>
-      <div class="mini-kpi"><div class="value" style="color:var(--green);">+0</div><div class="label">New Keywords</div></div>
-      <div class="mini-kpi"><div class="value" style="color:var(--green);">0 ▲</div><div class="label">Moving Up</div></div>
-      <div class="mini-kpi"><div class="value" style="color:var(--red);">0 ▼</div><div class="label">Moving Down</div></div>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
-      <div>
-        <h4 style="font-size:13px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Position Distribution</h4>
-        <table>
-          <thead><tr><th>Range</th><th>Keywords</th><th>Share</th></tr></thead>
-          <tbody><tr><td><span class="tag tag-green">Top 3</span></td><td class="mono"><strong>0</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:0%;background:#2d7a3a;"></div></div></td></tr><tr><td><span class="tag tag-blue">Pos 4–10</span></td><td class="mono"><strong>0</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:0%;background:#1a6bb5;"></div></div></td></tr><tr><td><span class="tag tag-blue">Pos 11–20</span></td><td class="mono"><strong>0</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:0%;background:#1a6bb5;"></div></div></td></tr><tr><td><span class="tag tag-orange">Pos 21+</span></td><td class="mono"><strong>0</strong></td><td><div class="progress-bar" style="width:180px;"><div class="progress-fill" style="width:0%;background:#b5680a;"></div></div></td></tr></tbody>
-        </table>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;">
-          <div class="mini-kpi"><div class="value">$0</div><div class="label">Est. Traffic Value</div></div>
-          <div class="mini-kpi"><div class="value">0</div><div class="label">Domain Rank (MDR)</div></div>
-        </div>
-      </div>
-      <div>
-        <h4 style="font-size:13px;font-weight:700;margin-bottom:12px;color:var(--text-secondary);letter-spacing:0.5px;text-transform:uppercase;">Keyword Distribution Chart</h4>
-        <div class="chart-container" style="height:220px;"><canvas id="kwChart"></canvas></div>
-        <script>new Chart(document.getElementById("kwChart").getContext("2d"),{type:"bar",data:{labels:["Top 3", "Pos 4-10", "Pos 11-20", "Pos 21+"],datasets:[{label:"Keywords",data:[0, 0, 0, 0],backgroundColor:["#2d7a3a","#1a6bb5","#b5680a","#c4390a"],borderRadius:6,barPercentage:0.65}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:"y",plugins:{legend:{display:false}},scales:{x:{beginAtZero:true,grid:{color:"rgba(0,0,0,0.04)"},ticks:{font:{size:11}}},y:{grid:{display:false},ticks:{font:{size:11,weight:"600"}}}}}});</script>
-      </div>
-    </div>
-  </div>
+  // Section 04: Insights & Recommendations
+  if (D.insights && D.insights.length) {
+    html += '<div class="section"><div class="section-header"><div class="section-icon red">💡</div><div>' +
+      '<div class="section-number">Section 04</div><div class="section-title">Key Insights &amp; Recommendations</div></div></div>';
+    D.insights.forEach(function(ins) {
+      html += '<div class="insight ' + ins.type + '"><span class="insight-icon">' + ins.icon + '</span>' +
+        '<div class="insight-content"><h4>' + ins.title + '</h4><p>' + ins.text + '</p></div></div>';
+    });
+    html += '</div>';
+  }
 
-  <!-- Insights -->
-  <div class="section">
-    <div class="section-header"><div class="section-icon red">💡</div><div><div class="section-number">Section 03</div><div class="section-title">Key Insights &amp; Recommendations</div></div></div>
-    <div class="insight warning"><span class="insight-icon">⚠️</span><div class="insight-content"><h4>Site in Early Launch Phase</h4><p>Contractor Bear is in the early stages of SEO indexation. Stambaugh Designs is actively building the site's keyword foundation and technical SEO infrastructure.</p></div></div><div class="insight positive"><span class="insight-icon">✅</span><div class="insight-content"><h4>Infrastructure Setup Underway</h4><p>Technical SEO foundations including sitemap, schema markup, and page optimization are being implemented. Organic rankings are expected to begin appearing within the coming 60-90 days.</p></div></div>
-  </div>
+  // Footer
+  html += '<div class="report-footer"><div class="footer-brand">Stambaugh Designs</div>' +
+    '<p>Data sources: Google Search Console · DataForSEO · Rybbit Analytics</p>' +
+    '<p style="margin-top:8px;">Questions? Contact <a href="mailto:hello@stambaughdesigns.co">hello@stambaughdesigns.co</a> · <a href="https://stambaughdesigns.co">stambaughdesigns.co</a></p>' +
+    '</div></div>';
 
-  <!-- Footer -->
-  <div class="report-footer">
-    <div class="footer-brand">Stambaugh Designs</div>
-    <p>Data sources: Google Search Console · DataForSEO</p>
-    <p style="margin-top:8px;">Questions? Contact <a href="mailto:hello@stambaughdesigns.co">hello@stambaughdesigns.co</a> · <a href="https://stambaughdesigns.co">stambaughdesigns.co</a></p>
-  </div>
-</div>
+  document.getElementById('app').innerHTML = html;  // ═══ CHARTS ═══
+  var fontFamily = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
+  Chart.defaults.font.family = fontFamily;
+  Chart.defaults.color = '#8c7e6e';
 
+  // Daily Clicks & Impressions
+  if (D.gsc && D.gsc.available && D.gsc.dailyChart.labels.length) {
+    new Chart(document.getElementById('dailyChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: D.gsc.dailyChart.labels,
+        datasets: [
+          { label: 'Clicks', data: D.gsc.dailyChart.clicks, backgroundColor: '#c4550a', borderRadius: 4, barPercentage: 0.6, yAxisID: 'y', order: 2 },
+          { label: 'Impressions', data: D.gsc.dailyChart.impressions, type: 'line', borderColor: '#8c7e6e', backgroundColor: 'rgba(140,126,110,0.1)', fill: true, tension: 0.4, pointRadius: 4, pointBackgroundColor: '#8c7e6e', borderWidth: 2, yAxisID: 'y1', order: 1 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { position: 'top', align: 'end', labels: { usePointStyle: true, pointStyle: 'circle', padding: 20, font: { size: 11, weight: '600' } } } },
+        scales: {
+          y: { beginAtZero: true, position: 'left', title: { display: true, text: 'Clicks', font: { size: 11, weight: '600' } }, grid: { color: 'rgba(0,0,0,0.04)' }, ticks: { font: { size: 11 } } },
+          y1: { beginAtZero: true, position: 'right', title: { display: true, text: 'Impressions', font: { size: 11, weight: '600' } }, grid: { display: false }, ticks: { font: { size: 11 } } },
+          x: { grid: { display: false }, ticks: { font: { size: 10 } } }
+        }
+      }
+    });
+  }  // Device Doughnut
+  if (D.gsc && D.gsc.available && D.gsc.deviceChart) {
+    new Chart(document.getElementById('deviceChart').getContext('2d'), {
+      type: 'doughnut',
+      data: {
+        labels: D.gsc.deviceChart.labels,
+        datasets: [{ data: D.gsc.deviceChart.data, backgroundColor: ['#c4550a', '#8c7e6e', '#e8e0d8'], borderWidth: 0, cutout: '65%' }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom', labels: { usePointStyle: true, pointStyle: 'circle', padding: 12, font: { size: 11, weight: '500' } } } }
+      }
+    });
+  }
+
+  // Keyword Distribution
+  if (D.keywords && D.keywords.available && D.keywords.chartData) {
+    new Chart(document.getElementById('keywordChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['Top 3', 'Pos 4–10', 'Pos 11–20', 'Pos 21–50', 'Pos 51–100'],
+        datasets: [{ label: 'Keywords', data: D.keywords.chartData, backgroundColor: ['#2d7a3a', '#1a6bb5', '#1a6bb5', '#b5680a', '#c4390a'], borderRadius: 6, barPercentage: 0.65 }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.04)' }, ticks: { font: { size: 11 } } },
+          y: { grid: { display: false }, ticks: { font: { size: 11, weight: '600' } } }
+        }
+      }
+    });
+  }
+})();
+</script>
 </body>
 </html>
